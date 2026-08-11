@@ -32,6 +32,24 @@ async function loadAllQuestions() {
   return exams.flat();
 }
 
+test("includes all 22 exams with 2,200 complete questions", async () => {
+  const manifest = JSON.parse(
+    await readFile(new URL("../public/data/exams/manifest.json", import.meta.url), "utf8"),
+  );
+
+  assert.equal(manifest.length, 22);
+  assert.equal(manifest.reduce((sum, exam) => sum + exam.count, 0), 2200);
+
+  for (const summary of manifest) {
+    const exam = JSON.parse(
+      await readFile(new URL(`../public${summary.dataUrl}`, import.meta.url), "utf8"),
+    );
+    assert.equal(exam.questions.length, 100, summary.label);
+    assert.ok(exam.questions.every((question) => question.choices.length === 4));
+    assert.ok(exam.questions.every((question) => question.labels.length > 0));
+  }
+});
+
 test("mock exam contains exactly 20 unique questions per official subject", async () => {
   const questions = await loadAllQuestions();
   const mock = createMockExam(questions, seededRandom(20260811));

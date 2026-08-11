@@ -2,6 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { authClient } from "../lib/auth/client";
 import {
   OFFICIAL_SUBJECTS,
   createMockExam,
@@ -51,7 +53,6 @@ type SyncState = "local" | "loading" | "synced" | "saving" | "error";
 const exams = manifestData as ExamSummary[];
 const choiceMarks = ["①", "②", "③", "④"];
 const storageKey = "waste-cbt-progress-v2";
-const syncedAppUrl = "https://waste-engineer-lab.jhs9918515606.chatgpt.site/";
 let libraryPromise: Promise<RuntimeQuestion[]> | null = null;
 
 function withExam(question: Question, exam: ExamData): RuntimeQuestion {
@@ -384,6 +385,11 @@ export default function QuizApp({
     );
   }
 
+  async function signOut() {
+    await authClient.signOut();
+    window.location.href = "/";
+  }
+
   return (
     <div className="app-shell">
       <header className="topbar">
@@ -397,7 +403,7 @@ export default function QuizApp({
           {initialUser ? (
             <button className="account-button" onClick={() => setShowPanel(true)}>{initialUser.displayName.slice(0, 8)}</button>
           ) : (
-            <a className="login-button" href={syncedAppUrl}>로그인</a>
+            <Link className="login-button" href="/auth/sign-in">로그인</Link>
           )}
           <button className="icon-button" onClick={() => setShowPanel(!showPanel)} aria-label="학습 현황 열기">
             {progress}%
@@ -573,9 +579,9 @@ export default function QuizApp({
           <button className="panel-close" onClick={() => setShowPanel(false)} aria-label="학습 현황 닫기">닫기</button>
           <div className="account-card">
             {initialUser ? (
-              <><span>로그인됨</span><b>{initialUser.displayName}</b><small className={syncState === "error" ? "sync-error" : ""}>{syncLabel}</small><a href="/signout-with-chatgpt?return_to=/">로그아웃</a></>
+              <><span>로그인됨</span><b>{initialUser.displayName}</b><small className={syncState === "error" ? "sync-error" : ""}>{syncLabel}</small><button className="account-link" onClick={() => void signOut()}>로그아웃</button></>
             ) : (
-              <><span>게스트 학습</span><b>오답은 이 기기에만 저장됩니다</b><a href={syncedAppUrl}>ChatGPT로 로그인</a></>
+              <><span>게스트 학습</span><b>오답은 이 기기에만 저장됩니다</b><Link href="/auth/sign-in">로그인하고 동기화</Link></>
             )}
           </div>
 

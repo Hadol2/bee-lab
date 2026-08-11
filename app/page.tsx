@@ -1,7 +1,14 @@
 import QuizApp from "./quiz-app";
-import { getChatGPTUser } from "./chatgpt-auth";
+import { auth } from "../lib/auth/server";
+
+export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const user = await getChatGPTUser();
-  return <QuizApp initialUser={user ? { displayName: user.displayName } : null} />;
+  const { data: session } = await auth.getSession();
+  const user = session?.user;
+  return (
+    <QuizApp
+      initialUser={user ? { displayName: user.name || user.email || "회원" } : null}
+    />
+  );
 }

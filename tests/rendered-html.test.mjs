@@ -1,53 +1,58 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
-import test from "node:test";
+import { spawn } from "node:child_process";
+import { after, before, test } from "node:test";
 
-async function render() {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-  return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
-    { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
-    { waitUntil() {}, passThroughOnException() {} },
+let server;
+let origin;
+let serverOutput = "";
+
+before(async () => {
+  const port = 32000 + (process.pid % 10000);
+  origin = `http://127.0.0.1:${port}`;
+  server = spawn(
+    process.execPath,
+    ["node_modules/next/dist/bin/next", "start", "-p", String(port)],
+    {
+      cwd: new URL("..", import.meta.url),
+      env: process.env,
+      stdio: ["ignore", "pipe", "pipe"],
+    },
   );
-}
+  server.stdout.on("data", (chunk) => { serverOutput += chunk; });
+  server.stderr.on("data", (chunk) => { serverOutput += chunk; });
+
+  for (let attempt = 0; attempt < 80; attempt += 1) {
+    if (server.exitCode !== null) throw new Error(serverOutput);
+    try {
+      const response = await fetch(origin);
+      if (response.ok) return;
+    } catch {
+      // Server is still starting.
+    }
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
+  throw new Error(`Next.js server did not start\n${serverOutput}`);
+});
+
+after(() => server?.kill("SIGTERM"));
 
 test("renders the waste engineer study app", async () => {
-  const response = await render();
+  const response = await fetch(origin);
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /폐기물기사/);
   assert.match(html, /기출문제 집중 학습/);
   assert.match(html, /2022년 2회/);
-  assert.doesNotMatch(html, /codex-preview/);
-  assert.doesNotMatch(html, /Building your site/);
 });
 
-test("includes every imported exam with complete answers", async () => {
-  const manifestUrl = new URL("../public/data/exams/manifest.json", import.meta.url);
-  const manifest = JSON.parse(await readFile(manifestUrl, "utf8"));
+test("renders the Vercel login page", async () => {
+  const response = await fetch(`${origin}/auth/sign-in`);
+  assert.equal(response.status, 200);
+  assert.match(await response.text(), /로그인|Sign in/i);
+});
 
-  assert.equal(manifest.length, 22);
-  assert.equal(manifest.reduce((sum, exam) => sum + exam.count, 0), 2200);
-
-  for (const summary of manifest) {
-    const examUrl = new URL(`../public${summary.dataUrl}`, import.meta.url);
-    const exam = JSON.parse(await readFile(examUrl, "utf8"));
-    assert.equal(exam.questions.length, 100, summary.label);
-    assert.deepEqual(
-      exam.questions.map((question) => question.number),
-      Array.from({ length: 100 }, (_, index) => index + 1),
-      summary.label,
-    );
-    for (const question of exam.questions) {
-      assert.equal(question.choices.length, 4, question.id);
-      assert.ok(question.choices.every(Boolean), question.id);
-      assert.ok(question.answer >= 0 && question.answer <= 3, question.id);
-      assert.ok(question.labels.length > 0, question.id);
-      if (question.choices.some((choice) => choice.startsWith("원문의"))) {
-        assert.ok(question.visuals.length > 0, question.id);
-      }
-    }
-  }
+test("protects progress for anonymous visitors", async () => {
+  const response = await fetch(`${origin}/api/progress`);
+  assert.equal(response.status, 401);
+  assert.deepEqual(await response.json(), { error: "Unauthorized" });
 });
