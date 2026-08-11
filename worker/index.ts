@@ -27,6 +27,10 @@ interface ExecutionContext {
 
 const worker = {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    if (env?.DB) {
+      (globalThis as typeof globalThis & { __WASTE_PROGRESS_DB__?: D1Database })
+        .__WASTE_PROGRESS_DB__ = env.DB;
+    }
     const url = new URL(request.url);
 
     if (url.pathname === "/_vinext/image") {

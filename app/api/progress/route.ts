@@ -12,14 +12,14 @@ type ProgressDatabase = {
   prepare: (query: string) => DatabaseStatement;
 };
 
-async function getDatabase(): Promise<ProgressDatabase> {
-  const importModule = new Function(
-    "specifier",
-    "return import(specifier)",
-  ) as (specifier: string) => Promise<{ env?: { DB?: ProgressDatabase } }>;
-  const workers = await importModule("cloudflare:workers");
-  if (!workers.env?.DB) throw new Error("DB binding unavailable");
-  return workers.env.DB;
+type ProgressRuntime = typeof globalThis & {
+  __WASTE_PROGRESS_DB__?: ProgressDatabase;
+};
+
+function getDatabase(): ProgressDatabase {
+  const db = (globalThis as ProgressRuntime).__WASTE_PROGRESS_DB__;
+  if (!db) throw new Error("DB binding unavailable");
+  return db;
 }
 
 async function userKey(email: string): Promise<string> {
@@ -39,7 +39,7 @@ export async function GET() {
   const user = await getChatGPTUser();
   if (!user) return Response.json({ error: "Unauthorized" }, { status: 401 });
 
-  const db = await getDatabase();
+  const db = getDatabase();
   const row = await db
     .prepare("SELECT wrong_ids FROM user_progress WHERE user_key = ?")
     .bind(await userKey(user.email))
@@ -56,7 +56,7 @@ export async function PUT(request: Request) {
   const wrongIds = sanitizeWrongIds(body?.wrongIds);
   if (!wrongIds) return Response.json({ error: "Invalid progress" }, { status: 400 });
 
-  const db = await getDatabase();
+  const db = getDatabase();
   await db
     .prepare(
       `INSERT INTO user_progress (user_key, wrong_ids, updated_at)
