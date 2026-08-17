@@ -32,22 +32,56 @@ async function loadAllQuestions() {
   return exams.flat();
 }
 
-test("includes all 22 exams with 2,200 complete questions", async () => {
+test("includes all 20 exams with 2,000 complete questions", async () => {
   const manifest = JSON.parse(
     await readFile(new URL("../public/data/exams/manifest.json", import.meta.url), "utf8"),
   );
 
-  assert.equal(manifest.length, 22);
-  assert.equal(manifest.reduce((sum, exam) => sum + exam.count, 0), 2200);
+  assert.equal(manifest.length, 20);
+  assert.equal(manifest.reduce((sum, exam) => sum + exam.count, 0), 2000);
+  assert.ok(manifest.every((exam) => !("studentPdf" in exam) && !("teacherPdf" in exam)));
 
   for (const summary of manifest) {
     const exam = JSON.parse(
       await readFile(new URL(`../public${summary.dataUrl}`, import.meta.url), "utf8"),
     );
     assert.equal(exam.questions.length, 100, summary.label);
+    assert.ok(!("studentPdf" in exam) && !("teacherPdf" in exam), summary.label);
     assert.ok(exam.questions.every((question) => question.choices.length === 4));
     assert.ok(exam.questions.every((question) => question.labels.length > 0));
+    assert.ok(
+      exam.questions.every((question) => question.explanation === null),
+      `${summary.label}: 공통 안내문을 실제 해설처럼 저장하면 안 됩니다.`,
+    );
   }
+});
+
+test("keeps chemical subscripts inline in imported questions", async () => {
+  const questions = await loadAllQuestions();
+  const byId = new Map(questions.map((question) => [question.id, question]));
+
+  assert.equal(
+    byId.get("20190427-024")?.text,
+    "유기물(C6H12O6) 0.1 ton을 혐기성 소화할 때 생성될 수 있는 최대 메탄의 양(kg)은?",
+  );
+  assert.equal(byId.get("20190427-024")?.answer, 1);
+  assert.equal(
+    byId.get("20210912-029")?.text,
+    "유기물(C6H12O6) 0.1 ton을 혐기성 소화할 때 생성될 수 있는 최대 메탄의 양(kg)은?",
+  );
+  assert.deepEqual(byId.get("20161001-034")?.choices, [
+    "Al2O3",
+    "V2O5",
+    "TiO2",
+    "Pd",
+  ]);
+
+  const displacedGlucose = questions.filter((question) =>
+    /\(C\s+H\s+O\s*\).*6\s+12\s+6/.test(
+      `${question.text} ${question.choices.join(" ")}`,
+    ),
+  );
+  assert.deepEqual(displacedGlucose, []);
 });
 
 test("mock exam contains exactly 20 unique questions per official subject", async () => {

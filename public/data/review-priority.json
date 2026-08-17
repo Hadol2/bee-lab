@@ -1,0 +1,3769 @@
+{
+  "metadata": {
+    "version": 1,
+    "generatedAt": "2026-08-14",
+    "description": "이 순위는 문항 텍스트·선택지·시각 자료·시행 당시 과목 정보를 기준으로 기계적으로 계산된 검수 우선순위이며, 사람에 의한 실제 검수가 완료되었음을 의미하지 않습니다.",
+    "methodology": "이 순위는 규칙 기반 스코어링 스크립트가 산출한 기계적 우선순위이며, 사람에 의한 실제 검수(human review)를 대체하지 않습니다.",
+    "totalQuestions": 2000,
+    "subjects": [
+      "폐기물 개론",
+      "폐기물 처리 기술",
+      "폐기물 소각 및 열회수",
+      "폐기물 공정시험기준",
+      "폐기물 관계 법규"
+    ],
+    "selectedPerSubject": 60,
+    "totalSelected": 300
+  },
+  "items": [
+    {
+      "rank": 1,
+      "questionId": "20170507-070",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-05-07",
+      "score": 95,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 2,
+      "questionId": "20180915-065",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-09-15",
+      "score": 95,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 3,
+      "questionId": "20200822-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-08-22",
+      "score": 95,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 4,
+      "questionId": "20200926-063",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-09-26",
+      "score": 95,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 5,
+      "questionId": "20180428-064",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-04-28",
+      "score": 90,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 6,
+      "questionId": "20200926-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-09-26",
+      "score": 90,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 7,
+      "questionId": "20210515-064",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-05-15",
+      "score": 90,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 8,
+      "questionId": "20210307-080",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-03-07",
+      "score": 85,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 9,
+      "questionId": "20170305-068",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-03-05",
+      "score": 80,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "문제 본문이 지나치게 짧음"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 10,
+      "questionId": "20190427-061",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-04-27",
+      "score": 80,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "문제 본문이 지나치게 짧음"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 11,
+      "questionId": "20160306-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-03-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 12,
+      "questionId": "20160306-091",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-03-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 13,
+      "questionId": "20161001-066",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 14,
+      "questionId": "20161001-078",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 15,
+      "questionId": "20161001-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 16,
+      "questionId": "20161001-089",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 17,
+      "questionId": "20161001-097",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 18,
+      "questionId": "20161001-099",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-10-01",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 19,
+      "questionId": "20170305-078",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-03-05",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 20,
+      "questionId": "20170507-065",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-05-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 21,
+      "questionId": "20170507-088",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-05-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 22,
+      "questionId": "20170507-091",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-05-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 23,
+      "questionId": "20170507-094",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-05-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 24,
+      "questionId": "20170923-072",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-09-23",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 25,
+      "questionId": "20170923-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-09-23",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 26,
+      "questionId": "20170923-090",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-09-23",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 27,
+      "questionId": "20170923-094",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-09-23",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 28,
+      "questionId": "20170923-098",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-09-23",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 29,
+      "questionId": "20180304-087",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 30,
+      "questionId": "20180304-088",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 31,
+      "questionId": "20180304-092",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 32,
+      "questionId": "20180304-094",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 33,
+      "questionId": "20180428-072",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 34,
+      "questionId": "20180428-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 35,
+      "questionId": "20180428-083",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 36,
+      "questionId": "20180428-084",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 37,
+      "questionId": "20180428-085",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 38,
+      "questionId": "20180428-094",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 39,
+      "questionId": "20180428-100",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 40,
+      "questionId": "20180915-098",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-09-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 41,
+      "questionId": "20190303-068",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-03-03",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 42,
+      "questionId": "20190303-076",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-03-03",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 43,
+      "questionId": "20190303-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-03-03",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 44,
+      "questionId": "20190303-087",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-03-03",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 45,
+      "questionId": "20190303-096",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-03-03",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 46,
+      "questionId": "20190427-070",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-04-27",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 47,
+      "questionId": "20190427-085",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-04-27",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 48,
+      "questionId": "20190427-090",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-04-27",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 49,
+      "questionId": "20190427-100",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-04-27",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 50,
+      "questionId": "20190921-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-09-21",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 51,
+      "questionId": "20190921-084",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-09-21",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 52,
+      "questionId": "20190921-096",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-09-21",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 53,
+      "questionId": "20200606-064",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 54,
+      "questionId": "20200606-067",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 55,
+      "questionId": "20200606-068",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 56,
+      "questionId": "20200606-069",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 57,
+      "questionId": "20200606-078",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 58,
+      "questionId": "20200606-080",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 59,
+      "questionId": "20200606-098",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2020-06-06",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 60,
+      "questionId": "20200822-063",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-08-22",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 61,
+      "questionId": "20200822-070",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-08-22",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 62,
+      "questionId": "20200822-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-08-22",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 63,
+      "questionId": "20200822-090",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2020-08-22",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 64,
+      "questionId": "20200926-065",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-09-26",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 65,
+      "questionId": "20200926-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-09-26",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 66,
+      "questionId": "20200926-079",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-09-26",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 67,
+      "questionId": "20200926-096",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2020-09-26",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 68,
+      "questionId": "20200926-098",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2020-09-26",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 69,
+      "questionId": "20210307-062",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 70,
+      "questionId": "20210307-063",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 71,
+      "questionId": "20210307-066",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 72,
+      "questionId": "20210307-081",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 73,
+      "questionId": "20210307-083",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 74,
+      "questionId": "20210307-089",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-03-07",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 75,
+      "questionId": "20210515-062",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-05-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 76,
+      "questionId": "20210515-080",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-05-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 77,
+      "questionId": "20210515-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-05-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 78,
+      "questionId": "20210515-085",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-05-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 79,
+      "questionId": "20210515-099",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-05-15",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 80,
+      "questionId": "20210912-070",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-09-12",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 81,
+      "questionId": "20210912-081",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-09-12",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 82,
+      "questionId": "20210912-099",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2021-09-12",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 83,
+      "questionId": "20220305-089",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-03-05",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 84,
+      "questionId": "20220305-093",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-03-05",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 85,
+      "questionId": "20220305-099",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-03-05",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 86,
+      "questionId": "20220424-061",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 87,
+      "questionId": "20220424-068",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 88,
+      "questionId": "20220424-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 89,
+      "questionId": "20220424-078",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 90,
+      "questionId": "20220424-081",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 91,
+      "questionId": "20220424-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 92,
+      "questionId": "20220424-085",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 93,
+      "questionId": "20220424-100",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2022-04-24",
+      "score": 75,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 94,
+      "questionId": "20160306-071",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-03-06",
+      "score": 70,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "문제 본문이 지나치게 짧음",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 95,
+      "questionId": "20161001-020",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 96,
+      "questionId": "20161001-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-10-01",
+      "score": 70,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 97,
+      "questionId": "20170507-058",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-05-07",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 98,
+      "questionId": "20180428-007",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-04-28",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 99,
+      "questionId": "20180428-026",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2018-04-28",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 100,
+      "questionId": "20180428-032",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2018-04-28",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 101,
+      "questionId": "20180915-035",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2018-09-15",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 102,
+      "questionId": "20190303-031",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2019-03-03",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 103,
+      "questionId": "20190303-075",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-03-03",
+      "score": 70,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 104,
+      "questionId": "20190921-022",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2019-09-21",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 105,
+      "questionId": "20190921-044",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2019-09-21",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 106,
+      "questionId": "20200606-010",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2020-06-06",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 107,
+      "questionId": "20200606-043",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2020-06-06",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 108,
+      "questionId": "20200606-047",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2020-06-06",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 109,
+      "questionId": "20200606-065",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2020-06-06",
+      "score": 70,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 110,
+      "questionId": "20200822-051",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2020-08-22",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 111,
+      "questionId": "20200822-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2020-08-22",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 112,
+      "questionId": "20200926-037",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2020-09-26",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 113,
+      "questionId": "20210307-015",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2021-03-07",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 114,
+      "questionId": "20210307-076",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2021-03-07",
+      "score": 70,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "문제 본문이 지나치게 짧음",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 115,
+      "questionId": "20210912-036",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-09-12",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 116,
+      "questionId": "20220305-038",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2022-03-05",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 117,
+      "questionId": "20220424-024",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2022-04-24",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 118,
+      "questionId": "20220424-058",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2022-04-24",
+      "score": 70,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 119,
+      "questionId": "20160306-067",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2016-03-06",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 120,
+      "questionId": "20170305-077",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-03-05",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 121,
+      "questionId": "20170305-079",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2017-03-05",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 122,
+      "questionId": "20170923-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-09-23",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 123,
+      "questionId": "20180304-061",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-03-04",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 124,
+      "questionId": "20180304-062",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-03-04",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 125,
+      "questionId": "20180304-080",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-03-04",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 126,
+      "questionId": "20180428-078",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2018-04-28",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 127,
+      "questionId": "20190427-072",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-04-27",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 128,
+      "questionId": "20190427-073",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-04-27",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 129,
+      "questionId": "20190427-080",
+      "legacySubject": "폐기물 공정시험기준",
+      "examDate": "2019-04-27",
+      "score": 65,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "현행 고시 대비 미확인 과목"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 130,
+      "questionId": "20160508-030",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 131,
+      "questionId": "20160508-046",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 132,
+      "questionId": "20161001-051",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 133,
+      "questionId": "20170305-031",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 134,
+      "questionId": "20180304-008",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 135,
+      "questionId": "20190427-037",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2019-04-27",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 136,
+      "questionId": "20190921-031",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2019-09-21",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 137,
+      "questionId": "20190921-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2019-09-21",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 138,
+      "questionId": "20200606-013",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2020-06-06",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 139,
+      "questionId": "20200606-019",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2020-06-06",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 140,
+      "questionId": "20210307-026",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-03-07",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 141,
+      "questionId": "20210307-036",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-03-07",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 142,
+      "questionId": "20210515-017",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2021-05-15",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 143,
+      "questionId": "20210912-039",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-09-12",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 144,
+      "questionId": "20220424-041",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2022-04-24",
+      "score": 60,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 145,
+      "questionId": "20160508-086",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2016-05-08",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 146,
+      "questionId": "20170305-098",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-03-05",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 147,
+      "questionId": "20170507-082",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-05-07",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 148,
+      "questionId": "20170507-087",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-05-07",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 149,
+      "questionId": "20170923-086",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2017-09-23",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 150,
+      "questionId": "20180304-083",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 151,
+      "questionId": "20180304-090",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-03-04",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 152,
+      "questionId": "20180428-095",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-04-28",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 153,
+      "questionId": "20180915-093",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2018-09-15",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 154,
+      "questionId": "20190427-094",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-04-27",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 155,
+      "questionId": "20190921-088",
+      "legacySubject": "폐기물 관계 법규",
+      "examDate": "2019-09-21",
+      "score": 55,
+      "reasons": [
+        "현행 고시 대비 미확인 과목",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 156,
+      "questionId": "20210307-045",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2021-03-07",
+      "score": 55,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "문제 본문이 지나치게 짧음"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 157,
+      "questionId": "20160508-004",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-05-08",
+      "score": 50,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 158,
+      "questionId": "20180428-006",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-04-28",
+      "score": 50,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 159,
+      "questionId": "20180915-014",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-09-15",
+      "score": 50,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 160,
+      "questionId": "20210307-040",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-03-07",
+      "score": 50,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 161,
+      "questionId": "20160508-023",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 162,
+      "questionId": "20170305-032",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 163,
+      "questionId": "20180304-015",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 164,
+      "questionId": "20180428-008",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-04-28",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 165,
+      "questionId": "20180915-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-09-15",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 166,
+      "questionId": "20180915-008",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-09-15",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 167,
+      "questionId": "20180915-016",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-09-15",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 168,
+      "questionId": "20180915-030",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2018-09-15",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 169,
+      "questionId": "20190427-033",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2019-04-27",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 170,
+      "questionId": "20190921-013",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2019-09-21",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 171,
+      "questionId": "20200926-039",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2020-09-26",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 172,
+      "questionId": "20200926-058",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2020-09-26",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 173,
+      "questionId": "20210515-030",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-05-15",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 174,
+      "questionId": "20210912-030",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2021-09-12",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 175,
+      "questionId": "20220424-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2022-04-24",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 176,
+      "questionId": "20220424-004",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2022-04-24",
+      "score": 45,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 177,
+      "questionId": "20160306-020",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-03-06",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 178,
+      "questionId": "20160306-034",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 179,
+      "questionId": "20160306-037",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 180,
+      "questionId": "20160508-029",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 40,
+      "reasons": [
+        "문제 본문이 지나치게 김",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 181,
+      "questionId": "20170923-037",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-09-23",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 182,
+      "questionId": "20170923-054",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 183,
+      "questionId": "20190303-019",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2019-03-03",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 184,
+      "questionId": "20200822-022",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2020-08-22",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 185,
+      "questionId": "20200822-028",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2020-08-22",
+      "score": 40,
+      "reasons": [
+        "문제 본문이 지나치게 김",
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 186,
+      "questionId": "20200926-007",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2020-09-26",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 187,
+      "questionId": "20210515-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2021-05-15",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 188,
+      "questionId": "20220305-001",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2022-03-05",
+      "score": 40,
+      "reasons": [
+        "시각 자료(표·그림) 포함 — 자동 해설 검증이 어려움"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 189,
+      "questionId": "20160306-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-03-06",
+      "score": 35,
+      "reasons": [
+        "문제 본문이 지나치게 짧음",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 190,
+      "questionId": "20180304-019",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 35,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 191,
+      "questionId": "20180428-053",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-04-28",
+      "score": 35,
+      "reasons": [
+        "문제 본문이 지나치게 짧음",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 192,
+      "questionId": "20190921-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2019-09-21",
+      "score": 35,
+      "reasons": [
+        "문제 본문이 지나치게 짧음",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 193,
+      "questionId": "20220305-012",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2022-03-05",
+      "score": 35,
+      "reasons": [
+        "지나치게 짧은 선택지 존재",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 194,
+      "questionId": "20220305-047",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2022-03-05",
+      "score": 35,
+      "reasons": [
+        "문제 본문이 지나치게 짧음",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 195,
+      "questionId": "20160306-007",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 196,
+      "questionId": "20160306-018",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 197,
+      "questionId": "20160306-019",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 198,
+      "questionId": "20160306-025",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 199,
+      "questionId": "20160306-026",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 200,
+      "questionId": "20160306-031",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 201,
+      "questionId": "20160306-033",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 202,
+      "questionId": "20160306-036",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 203,
+      "questionId": "20160306-041",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 204,
+      "questionId": "20160306-043",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 205,
+      "questionId": "20160306-046",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 206,
+      "questionId": "20160306-048",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 207,
+      "questionId": "20160306-049",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 208,
+      "questionId": "20160306-051",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 209,
+      "questionId": "20160306-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 210,
+      "questionId": "20160306-055",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 211,
+      "questionId": "20160306-058",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 212,
+      "questionId": "20160306-059",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-03-06",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 213,
+      "questionId": "20160508-009",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 214,
+      "questionId": "20160508-011",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 215,
+      "questionId": "20160508-012",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 216,
+      "questionId": "20160508-015",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 217,
+      "questionId": "20160508-021",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 218,
+      "questionId": "20160508-025",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 219,
+      "questionId": "20160508-026",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 220,
+      "questionId": "20160508-027",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 221,
+      "questionId": "20160508-028",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 222,
+      "questionId": "20160508-032",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 223,
+      "questionId": "20160508-035",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 224,
+      "questionId": "20160508-036",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 225,
+      "questionId": "20160508-037",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 226,
+      "questionId": "20160508-040",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 227,
+      "questionId": "20160508-041",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 228,
+      "questionId": "20160508-043",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 229,
+      "questionId": "20160508-050",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 230,
+      "questionId": "20160508-051",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 231,
+      "questionId": "20160508-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 232,
+      "questionId": "20160508-055",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 233,
+      "questionId": "20160508-056",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 234,
+      "questionId": "20160508-057",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-05-08",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 235,
+      "questionId": "20161001-007",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 236,
+      "questionId": "20161001-008",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 237,
+      "questionId": "20161001-009",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 238,
+      "questionId": "20161001-012",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 239,
+      "questionId": "20161001-016",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 240,
+      "questionId": "20161001-021",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 241,
+      "questionId": "20161001-026",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 242,
+      "questionId": "20161001-028",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 243,
+      "questionId": "20161001-030",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 244,
+      "questionId": "20161001-033",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 245,
+      "questionId": "20161001-036",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 246,
+      "questionId": "20161001-040",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 247,
+      "questionId": "20161001-045",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 248,
+      "questionId": "20161001-046",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 249,
+      "questionId": "20161001-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 250,
+      "questionId": "20161001-053",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 251,
+      "questionId": "20161001-055",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 252,
+      "questionId": "20161001-058",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2016-10-01",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 253,
+      "questionId": "20170305-006",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 254,
+      "questionId": "20170305-008",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 255,
+      "questionId": "20170305-009",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 256,
+      "questionId": "20170305-011",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 257,
+      "questionId": "20170305-016",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 258,
+      "questionId": "20170305-017",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 259,
+      "questionId": "20170305-020",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 260,
+      "questionId": "20170305-025",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 261,
+      "questionId": "20170305-027",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 262,
+      "questionId": "20170305-028",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 263,
+      "questionId": "20170305-029",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 264,
+      "questionId": "20170305-034",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 265,
+      "questionId": "20170305-035",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 266,
+      "questionId": "20170305-045",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 267,
+      "questionId": "20170305-051",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 268,
+      "questionId": "20170305-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 269,
+      "questionId": "20170305-053",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-03-05",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 270,
+      "questionId": "20170507-005",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 271,
+      "questionId": "20170507-006",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 272,
+      "questionId": "20170507-012",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 273,
+      "questionId": "20170507-016",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 274,
+      "questionId": "20170507-017",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 275,
+      "questionId": "20170507-020",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 276,
+      "questionId": "20170507-022",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 277,
+      "questionId": "20170507-024",
+      "legacySubject": "폐기물 처리 기술",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 278,
+      "questionId": "20170507-045",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 279,
+      "questionId": "20170507-050",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 280,
+      "questionId": "20170507-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 281,
+      "questionId": "20170507-054",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-05-07",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 282,
+      "questionId": "20170923-003",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 283,
+      "questionId": "20170923-006",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 284,
+      "questionId": "20170923-007",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 285,
+      "questionId": "20170923-018",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 286,
+      "questionId": "20170923-041",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 287,
+      "questionId": "20170923-049",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 288,
+      "questionId": "20170923-053",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 289,
+      "questionId": "20170923-056",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 290,
+      "questionId": "20170923-060",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2017-09-23",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 291,
+      "questionId": "20180304-005",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 292,
+      "questionId": "20180304-010",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 293,
+      "questionId": "20180304-018",
+      "legacySubject": "폐기물 개론",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 294,
+      "questionId": "20180304-043",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 295,
+      "questionId": "20180304-045",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 296,
+      "questionId": "20180304-048",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 297,
+      "questionId": "20180304-052",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 298,
+      "questionId": "20180304-053",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 299,
+      "questionId": "20180304-059",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    },
+    {
+      "rank": 300,
+      "questionId": "20180304-060",
+      "legacySubject": "폐기물 소각 및 열회수",
+      "examDate": "2018-03-04",
+      "score": 30,
+      "reasons": [
+        "계산·수치 기반 선택지 다수 — 계산 오류 위험",
+        "계산·단위·공식 관련 표현 포함 — 수치 계산 검증 필요"
+      ],
+      "reviewStatus": "unreviewed"
+    }
+  ]
+}

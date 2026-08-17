@@ -1,0 +1,925 @@
+[
+  {
+    "id": "fc-01-mass-volume-density",
+    "title": "질량-부피-밀도 관계",
+    "formula": "M = ρ × V",
+    "variables": [
+      {
+        "symbol": "M",
+        "meaning": "질량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "ρ",
+        "meaning": "밀도",
+        "unit": "kg/m³"
+      },
+      {
+        "symbol": "V",
+        "meaning": "부피",
+        "unit": "m³"
+      }
+    ],
+    "assumptions": [
+      "폐기물이 균질하다고 가정",
+      "압축 전 상태 기준 측정"
+    ],
+    "worked": {
+      "given": "ρ = 300 kg/m³, V = 5 m³",
+      "steps": [
+        "M = ρ × V",
+        "M = 300 × 5"
+      ],
+      "result": "M = 1,500 kg"
+    },
+    "commonTraps": [
+      "밀도 단위(g/cm³ vs kg/m³) 혼용",
+      "압축 전후 밀도를 구분하지 않음"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210912-046"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-02-moisture-dry-solids",
+    "title": "함수율과 건조고형물 관계",
+    "formula": "TS = W × (1 - w/100)",
+    "variables": [
+      {
+        "symbol": "TS",
+        "meaning": "건조고형물 질량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "W",
+        "meaning": "습윤 시료 질량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "w",
+        "meaning": "함수율",
+        "unit": "%"
+      }
+    ],
+    "assumptions": [
+      "함수율은 습윤중량 기준(wet basis)"
+    ],
+    "worked": {
+      "given": "W = 100 kg, w = 40%",
+      "steps": [
+        "TS = 100 × (1 - 0.40)",
+        "TS = 100 × 0.60"
+      ],
+      "result": "TS = 60 kg"
+    },
+    "commonTraps": [
+      "습윤기준과 건조기준 함수율 혼동",
+      "%를 소수로 변환하지 않음"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20220424-044"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-03-compaction-ratio",
+    "title": "압축비(CR)",
+    "formula": "CR = V_i / V_f",
+    "variables": [
+      {
+        "symbol": "CR",
+        "meaning": "압축비",
+        "unit": "무차원"
+      },
+      {
+        "symbol": "V_i",
+        "meaning": "압축 전 부피",
+        "unit": "m³"
+      },
+      {
+        "symbol": "V_f",
+        "meaning": "압축 후 부피",
+        "unit": "m³"
+      }
+    ],
+    "assumptions": [
+      "동일 질량 기준으로 압축 전후 부피 비교"
+    ],
+    "worked": {
+      "given": "V_i = 10 m³, V_f = 2.5 m³",
+      "steps": [
+        "CR = V_i / V_f",
+        "CR = 10 / 2.5"
+      ],
+      "result": "CR = 4"
+    },
+    "commonTraps": [
+      "부피감소율(%)과 압축비를 혼동",
+      "분자·분모를 반대로 적용"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20220424-046"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-04-per-capita-waste",
+    "title": "1인 1일 폐기물 발생량",
+    "formula": "q = Q / (N × D)",
+    "variables": [
+      {
+        "symbol": "q",
+        "meaning": "1인 1일 발생량",
+        "unit": "kg/인·일"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "총 발생량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "N",
+        "meaning": "인구수",
+        "unit": "인"
+      },
+      {
+        "symbol": "D",
+        "meaning": "조사 기간",
+        "unit": "일"
+      }
+    ],
+    "assumptions": [
+      "수거된 양이 발생량과 동일하다고 가정"
+    ],
+    "worked": {
+      "given": "Q = 1,000,000 kg, N = 50,000인, D = 30일",
+      "steps": [
+        "q = Q / (N × D)",
+        "q = 1,000,000 / 1,500,000"
+      ],
+      "result": "q ≈ 0.667 kg/인·일"
+    },
+    "commonTraps": [
+      "인구수를 세대수로 착각",
+      "기간 단위(월/일) 미변환"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210307-053"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-05-collection-trips",
+    "title": "수거 운반 소요 횟수",
+    "formula": "n = ceil(Q / (V × ρ))",
+    "variables": [
+      {
+        "symbol": "n",
+        "meaning": "필요 운반 횟수",
+        "unit": "회"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "총 수거량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "V",
+        "meaning": "차량 적재 용적",
+        "unit": "m³"
+      },
+      {
+        "symbol": "ρ",
+        "meaning": "적재 밀도",
+        "unit": "kg/m³"
+      }
+    ],
+    "assumptions": [
+      "차량 1대 기준, 만재 적재 가정"
+    ],
+    "worked": {
+      "given": "Q = 24,000 kg, V = 8 m³, ρ = 400 kg/m³",
+      "steps": [
+        "적재량 = 8 × 400 = 3,200 kg",
+        "n = 24,000 / 3,200 = 7.5 → 올림"
+      ],
+      "result": "n = 8회"
+    },
+    "commonTraps": [
+      "소수점을 올림(ceil) 대신 반올림 처리",
+      "적재 밀도와 폐기물 원밀도를 혼동"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20200606-052"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-06-recovery-rate",
+    "title": "자원회수율",
+    "formula": "R(%) = (M_recovered / M_total) × 100",
+    "variables": [
+      {
+        "symbol": "R",
+        "meaning": "회수율",
+        "unit": "%"
+      },
+      {
+        "symbol": "M_recovered",
+        "meaning": "회수된 자원량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "M_total",
+        "meaning": "반입 총량",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "회수량은 반입 총량의 부분집합"
+    ],
+    "worked": {
+      "given": "M_recovered = 300 kg, M_total = 1,000 kg",
+      "steps": [
+        "R = 300 / 1,000 × 100"
+      ],
+      "result": "R = 30%"
+    },
+    "commonTraps": [
+      "제거·잔재물량을 분모로 잘못 사용"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20190303-059"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-07-bod-loading",
+    "title": "BOD 부하량",
+    "formula": "L = Q × C × f",
+    "variables": [
+      {
+        "symbol": "L",
+        "meaning": "BOD 부하량",
+        "unit": "kg/day"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "유량",
+        "unit": "m³/day"
+      },
+      {
+        "symbol": "C",
+        "meaning": "BOD 농도",
+        "unit": "mg/L"
+      },
+      {
+        "symbol": "f",
+        "meaning": "단위환산계수(10⁻³)",
+        "unit": "무차원"
+      }
+    ],
+    "assumptions": [
+      "정상상태, 농도가 시간에 따라 일정"
+    ],
+    "worked": {
+      "given": "Q = 1,000 m³/day, C = 200 mg/L",
+      "steps": [
+        "L = Q × C × 0.001",
+        "L = 1,000 × 200 × 0.001"
+      ],
+      "result": "L = 200 kg/day"
+    },
+    "commonTraps": [
+      "mg/L·m³/day → kg/day 환산 계수(10⁻³) 누락"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20180915-050"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-08-first-order-decay",
+    "title": "1차 반응 분해(유기물 안정화)",
+    "formula": "C = C0 × e^(-k t)",
+    "variables": [
+      {
+        "symbol": "C",
+        "meaning": "t시점 잔존 농도",
+        "unit": "동일 단위"
+      },
+      {
+        "symbol": "C0",
+        "meaning": "초기 농도",
+        "unit": "동일 단위"
+      },
+      {
+        "symbol": "k",
+        "meaning": "분해상수",
+        "unit": "1/day"
+      },
+      {
+        "symbol": "t",
+        "meaning": "경과시간",
+        "unit": "day"
+      }
+    ],
+    "assumptions": [
+      "1차 반응, k는 시간에 따라 일정"
+    ],
+    "worked": {
+      "given": "C0 = 100, k = 0.1/day, t = 10day",
+      "steps": [
+        "C = 100 × e^(-0.1×10)",
+        "C = 100 × e^(-1)"
+      ],
+      "result": "C ≈ 36.8"
+    },
+    "commonTraps": [
+      "k 단위(1/day vs 1/year) 미변환",
+      "자연로그와 상용로그 혼동"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210912-014"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-09-methane-stoichiometry",
+    "title": "혐기성 분해 이론적 메탄 발생량",
+    "formula": "V_CH4 = 0.35 × ΔCOD_removed",
+    "variables": [
+      {
+        "symbol": "V_CH4",
+        "meaning": "이론적 메탄 발생량",
+        "unit": "L(STP)/g CODremoved"
+      },
+      {
+        "symbol": "ΔCOD_removed",
+        "meaning": "제거된 COD량",
+        "unit": "g"
+      }
+    ],
+    "assumptions": [
+      "표준상태(0°C, 1atm) 기준",
+      "제거된 COD가 전량 메탄화된다고 가정"
+    ],
+    "worked": {
+      "given": "ΔCOD_removed = 500 g",
+      "steps": [
+        "V_CH4 = 0.35 × 500"
+      ],
+      "result": "V_CH4 = 175 L(STP)"
+    },
+    "commonTraps": [
+      "표준상태 계수(0.35)와 상온 계수(0.395)를 혼용"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20190921-043"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-10-ideal-gas-law",
+    "title": "이상기체 상태방정식",
+    "formula": "PV = nRT",
+    "variables": [
+      {
+        "symbol": "P",
+        "meaning": "압력",
+        "unit": "atm"
+      },
+      {
+        "symbol": "V",
+        "meaning": "부피",
+        "unit": "L"
+      },
+      {
+        "symbol": "n",
+        "meaning": "몰수",
+        "unit": "mol"
+      },
+      {
+        "symbol": "R",
+        "meaning": "기체상수(0.082)",
+        "unit": "atm·L/mol·K"
+      },
+      {
+        "symbol": "T",
+        "meaning": "절대온도",
+        "unit": "K"
+      }
+    ],
+    "assumptions": [
+      "이상기체 거동 가정",
+      "R = 0.082 atm·L/mol·K 사용"
+    ],
+    "worked": {
+      "given": "n = 2 mol, T = 298K, P = 1atm",
+      "steps": [
+        "V = nRT / P",
+        "V = 2 × 0.082 × 298 / 1"
+      ],
+      "result": "V ≈ 48.9 L"
+    },
+    "commonTraps": [
+      "섭씨온도를 절대온도로 변환하지 않고 대입",
+      "R값 단위 불일치(atm vs kPa)"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210912-041"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-11-theoretical-air",
+    "title": "이론공기량(연소)",
+    "formula": "A0 = O0 / 0.21",
+    "variables": [
+      {
+        "symbol": "A0",
+        "meaning": "이론공기량",
+        "unit": "Nm³/kg"
+      },
+      {
+        "symbol": "O0",
+        "meaning": "이론산소량",
+        "unit": "Nm³/kg"
+      }
+    ],
+    "assumptions": [
+      "공기 중 산소 비율 21%(부피 기준)"
+    ],
+    "worked": {
+      "given": "O0 = 1.5 Nm³/kg",
+      "steps": [
+        "A0 = 1.5 / 0.21"
+      ],
+      "result": "A0 ≈ 7.14 Nm³/kg"
+    },
+    "commonTraps": [
+      "산소 비율을 23%(중량 기준)로 착각"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20200606-001"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-12-lhv-moisture",
+    "title": "저위발열량과 함수율 보정",
+    "formula": "Hl = Hh - 600 × (9H + W) / 100",
+    "variables": [
+      {
+        "symbol": "Hl",
+        "meaning": "저위발열량",
+        "unit": "kcal/kg"
+      },
+      {
+        "symbol": "Hh",
+        "meaning": "고위발열량",
+        "unit": "kcal/kg"
+      },
+      {
+        "symbol": "H",
+        "meaning": "수소 함량",
+        "unit": "%"
+      },
+      {
+        "symbol": "W",
+        "meaning": "함수율",
+        "unit": "%"
+      }
+    ],
+    "assumptions": [
+      "수증기 잠열 600 kcal/kg 근사값 적용"
+    ],
+    "worked": {
+      "given": "Hh = 4,000 kcal/kg, H = 6%, W = 20%",
+      "steps": [
+        "9H + W = 54 + 20 = 74",
+        "Hl = 4,000 - 600 × 74 / 100"
+      ],
+      "result": "Hl ≈ 3,556 kcal/kg"
+    },
+    "commonTraps": [
+      "고위발열량과 저위발열량을 구분하지 않고 그대로 사용"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20190427-009"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-13-incinerator-loading",
+    "title": "소각로 설계처리용량과 가동률",
+    "formula": "Q_design = Q_actual / U",
+    "variables": [
+      {
+        "symbol": "Q_design",
+        "meaning": "설계처리용량",
+        "unit": "ton/day"
+      },
+      {
+        "symbol": "Q_actual",
+        "meaning": "실제 처리량",
+        "unit": "ton/day"
+      },
+      {
+        "symbol": "U",
+        "meaning": "가동률",
+        "unit": "무차원(0~1)"
+      }
+    ],
+    "assumptions": [
+      "가동률은 연속운전 대비 실가동시간 비율"
+    ],
+    "worked": {
+      "given": "Q_actual = 80 ton/day, U = 0.8",
+      "steps": [
+        "Q_design = 80 / 0.8"
+      ],
+      "result": "Q_design = 100 ton/day"
+    },
+    "commonTraps": [
+      "가동률(%)을 소수로 변환하지 않고 대입"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210912-005"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-14-gas-residence-time",
+    "title": "연소가스 체류시간",
+    "formula": "t = V / Q",
+    "variables": [
+      {
+        "symbol": "t",
+        "meaning": "체류시간",
+        "unit": "sec"
+      },
+      {
+        "symbol": "V",
+        "meaning": "연소실 유효부피",
+        "unit": "m³"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "배가스 유량",
+        "unit": "m³/sec"
+      }
+    ],
+    "assumptions": [
+      "정상상태, 플러그흐름(Plug Flow) 가정"
+    ],
+    "worked": {
+      "given": "V = 20 m³, Q = 4 m³/sec",
+      "steps": [
+        "t = 20 / 4"
+      ],
+      "result": "t = 5 sec"
+    },
+    "commonTraps": [
+      "유량 단위를 시간당(m³/hr)으로 두고 초 단위와 혼용"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20220305-005"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-15-settling-overflow",
+    "title": "표면부하율(침강속도 설계기준)",
+    "formula": "Vs = Q / A",
+    "variables": [
+      {
+        "symbol": "Vs",
+        "meaning": "표면부하율",
+        "unit": "m/day"
+      },
+      {
+        "symbol": "Q",
+        "meaning": "유입유량",
+        "unit": "m³/day"
+      },
+      {
+        "symbol": "A",
+        "meaning": "침전지 표면적",
+        "unit": "m²"
+      }
+    ],
+    "assumptions": [
+      "이상적 침전(Type I), 균등 유입 가정"
+    ],
+    "worked": {
+      "given": "Q = 2,400 m³/day, A = 200 m²",
+      "steps": [
+        "Vs = 2,400 / 200"
+      ],
+      "result": "Vs = 12 m/day"
+    },
+    "commonTraps": [
+      "표면적 대신 침전지 체적을 사용",
+      "단위(m/day vs m/hr) 변환 누락"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20200606-034"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-16-leachate-water-balance",
+    "title": "매립지 침출수 물수지",
+    "formula": "L = P - ET - ΔS - R",
+    "variables": [
+      {
+        "symbol": "L",
+        "meaning": "침출수 발생량",
+        "unit": "mm"
+      },
+      {
+        "symbol": "P",
+        "meaning": "강수량",
+        "unit": "mm"
+      },
+      {
+        "symbol": "ET",
+        "meaning": "증발산량",
+        "unit": "mm"
+      },
+      {
+        "symbol": "ΔS",
+        "meaning": "토양저류 변화량",
+        "unit": "mm"
+      },
+      {
+        "symbol": "R",
+        "meaning": "표면유출량",
+        "unit": "mm"
+      }
+    ],
+    "assumptions": [
+      "단순 물수지, 지하수 유입 없음"
+    ],
+    "worked": {
+      "given": "P = 100mm, ET = 40mm, ΔS = 10mm, R = 20mm",
+      "steps": [
+        "L = 100 - 40 - 10 - 20"
+      ],
+      "result": "L = 30 mm"
+    },
+    "commonTraps": [
+      "증발산과 단순 증발을 동일시",
+      "mm와 부피(m³) 환산 시 면적 곱셈 누락"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20220424-003"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-17-solidification-binder-ratio",
+    "title": "고형화/안정화 배합비",
+    "formula": "R_binder = M_binder / M_waste",
+    "variables": [
+      {
+        "symbol": "R_binder",
+        "meaning": "고화재 배합비",
+        "unit": "무차원"
+      },
+      {
+        "symbol": "M_binder",
+        "meaning": "고화재(시멘트 등) 질량",
+        "unit": "kg"
+      },
+      {
+        "symbol": "M_waste",
+        "meaning": "폐기물 질량",
+        "unit": "kg"
+      }
+    ],
+    "assumptions": [
+      "균질 혼합, 물/첨가제는 별도 고려"
+    ],
+    "worked": {
+      "given": "M_waste = 1,000 kg, R_binder = 0.15",
+      "steps": [
+        "M_binder = 0.15 × 1,000"
+      ],
+      "result": "M_binder = 150 kg"
+    },
+    "commonTraps": [
+      "배합비를 중량비가 아닌 부피비로 착각"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20180915-003"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-18-dilution",
+    "title": "희석 계산(질량 보존)",
+    "formula": "C1V1 = C2V2",
+    "variables": [
+      {
+        "symbol": "C1",
+        "meaning": "희석 전 농도",
+        "unit": "mg/L"
+      },
+      {
+        "symbol": "V1",
+        "meaning": "희석 전 부피",
+        "unit": "L"
+      },
+      {
+        "symbol": "C2",
+        "meaning": "희석 후 농도",
+        "unit": "mg/L"
+      },
+      {
+        "symbol": "V2",
+        "meaning": "희석 후 부피",
+        "unit": "L"
+      }
+    ],
+    "assumptions": [
+      "혼합 시 부피 가산성 성립"
+    ],
+    "worked": {
+      "given": "C1 = 1,000 mg/L, V1 = 10L, V2 = 100L",
+      "steps": [
+        "C2 = C1V1 / V2",
+        "C2 = 1,000 × 10 / 100"
+      ],
+      "result": "C2 = 100 mg/L"
+    },
+    "commonTraps": [
+      "희석배율과 희석 후 농도값을 혼동"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210515-007"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-19-removal-efficiency",
+    "title": "제거효율",
+    "formula": "η(%) = (C_in - C_out) / C_in × 100",
+    "variables": [
+      {
+        "symbol": "η",
+        "meaning": "제거효율",
+        "unit": "%"
+      },
+      {
+        "symbol": "C_in",
+        "meaning": "유입농도",
+        "unit": "mg/L"
+      },
+      {
+        "symbol": "C_out",
+        "meaning": "유출농도",
+        "unit": "mg/L"
+      }
+    ],
+    "assumptions": [
+      "유입·유출 유량이 동일하다고 가정"
+    ],
+    "worked": {
+      "given": "C_in = 200 mg/L, C_out = 20 mg/L",
+      "steps": [
+        "η = (200 - 20) / 200 × 100"
+      ],
+      "result": "η = 90%"
+    },
+    "commonTraps": [
+      "유량 변화가 있는 경우 농도 기준이 아닌 부하량 기준 재계산 필요"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20220305-072"
+    ],
+    "reviewStatus": "machine_checked"
+  },
+  {
+    "id": "fc-20-unit-conversion",
+    "title": "단위 환산 기본(질량-부피-농도)",
+    "formula": "1 mg/L = 1 g/m³ = 10⁻³ kg/m³",
+    "variables": [
+      {
+        "symbol": "mg/L",
+        "meaning": "밀리그램 매 리터",
+        "unit": "mg/L"
+      },
+      {
+        "symbol": "g/m³",
+        "meaning": "그램 매 세제곱미터",
+        "unit": "g/m³"
+      },
+      {
+        "symbol": "kg/m³",
+        "meaning": "킬로그램 매 세제곱미터",
+        "unit": "kg/m³"
+      }
+    ],
+    "assumptions": [
+      "수용액 밀도를 물의 밀도(1,000 kg/m³)로 근사"
+    ],
+    "worked": {
+      "given": "C = 250 mg/L",
+      "steps": [
+        "250 mg/L = 250 g/m³",
+        "250 g/m³ = 0.25 kg/m³"
+      ],
+      "result": "C = 0.25 kg/m³"
+    },
+    "commonTraps": [
+      "mg/L을 항상 ppm과 동일시(고농도·비수용액에서는 밀도 보정 필요)"
+    ],
+    "citation": {
+      "type": "general",
+      "ref": "환경공학 일반 질량수지·화학양론(독자 작성)"
+    },
+    "questionIds": [
+      "20210307-068"
+    ],
+    "reviewStatus": "machine_checked"
+  }
+]

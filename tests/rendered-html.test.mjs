@@ -40,8 +40,9 @@ test("renders the waste engineer study app", async () => {
   const response = await fetch(origin);
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /폐기물기사/);
-  assert.match(html, /기출문제 집중 학습/);
+  assert.match(html, /폐기물처리기사/);
+  assert.match(html, /지금 필요한 학습을 고르세요/);
+  assert.match(html, /과목별 (?:<!-- -->)?20(?:<!-- -->)?문제/);
   assert.match(html, /2022년 2회/);
 });
 

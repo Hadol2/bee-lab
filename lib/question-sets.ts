@@ -43,3 +43,55 @@ export function createMockExam<T extends SubjectQuestion>(
     createSubjectSet(questions, subject, 20, random),
   );
 }
+
+export const CURRENT_SUBJECT_KEYS = ["subject-1", "subject-2", "subject-3", "subject-4"] as const;
+
+export type CurrentSubjectKey = (typeof CURRENT_SUBJECT_KEYS)[number];
+
+export type DomainMappingRecord = {
+  questionId: string;
+  currentSubjectKey: CurrentSubjectKey | null;
+  eligibleForCurrentMock: boolean;
+};
+
+export type DomainMapping = {
+  version: 2;
+  records: readonly DomainMappingRecord[];
+};
+
+function candidateIdsForCurrentSubject(mapping: DomainMapping, key: CurrentSubjectKey): Set<string> {
+  const ids = new Set<string>();
+  for (const record of mapping.records) {
+    if (record.eligibleForCurrentMock && record.currentSubjectKey === key) {
+      ids.add(record.questionId);
+    }
+  }
+  return ids;
+}
+
+export function createCurrentSubjectSet<T extends SubjectQuestion>(
+  questions: readonly T[],
+  mapping: DomainMapping,
+  key: CurrentSubjectKey,
+  count = 20,
+  random = Math.random,
+): T[] {
+  const candidateIds = candidateIdsForCurrentSubject(mapping, key);
+  const candidates = questions.filter((question) => candidateIds.has(question.id));
+  if (candidates.length < count) {
+    throw new Error(
+      `${key} 문제 수가 ${count}개보다 적습니다 (매핑된 후보: ${candidates.length}개). 공식 출제기준 파일 확보 전에는 발생할 수 있는 정상적인 실패입니다.`,
+    );
+  }
+  return shuffled(candidates, random).slice(0, count);
+}
+
+export function createCurrentMockExam<T extends SubjectQuestion>(
+  questions: readonly T[],
+  mapping: DomainMapping,
+  random = Math.random,
+): T[] {
+  return CURRENT_SUBJECT_KEYS.flatMap((key) =>
+    createCurrentSubjectSet(questions, mapping, key, 20, random),
+  );
+}

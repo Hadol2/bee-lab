@@ -1,0 +1,1049 @@
+{
+  "version": 1,
+  "titleKo": "출제기준(필기) - 폐기물처리기사",
+  "period": {
+    "start": "2026-01-01",
+    "end": "2030-12-31"
+  },
+  "examFormat": {
+    "method": "객관식",
+    "totalQuestions": 80,
+    "durationMinutes": 120,
+    "subjectCount": 4,
+    "questionsPerSubject": 20
+  },
+  "subjects": [
+    {
+      "id": "subject-1",
+      "name": "폐기물개론",
+      "questionCount": 20,
+      "majors": [
+        {
+          "id": "subject-1.major-1",
+          "name": "오염원 현황파악",
+          "minors": [
+            {
+              "id": "subject-1.major-1.minor-1",
+              "name": "폐기물 발생원 현황 파악",
+              "details": [
+                {
+                  "id": "subject-1.major-1.minor-1.detail-1",
+                  "name": "폐기물 발생원 파악"
+                },
+                {
+                  "id": "subject-1.major-1.minor-1.detail-2",
+                  "name": "폐기물 분류체계"
+                },
+                {
+                  "id": "subject-1.major-1.minor-1.detail-3",
+                  "name": "폐기물 유해성 확인"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-1.minor-2",
+              "name": "배출원별 발생량 및 처리량",
+              "details": [
+                {
+                  "id": "subject-1.major-1.minor-2.detail-1",
+                  "name": "폐기물 발생 및 처리량 파악"
+                },
+                {
+                  "id": "subject-1.major-1.minor-2.detail-2",
+                  "name": "발생량 조사 및 예측"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-1.major-2",
+          "name": "폐기물관리 계획 수립",
+          "minors": [
+            {
+              "id": "subject-1.major-2.minor-1",
+              "name": "폐기물 발생 특성 파악",
+              "details": [
+                {
+                  "id": "subject-1.major-2.minor-1.detail-1",
+                  "name": "폐기물 특성 파악"
+                },
+                {
+                  "id": "subject-1.major-2.minor-1.detail-2",
+                  "name": "폐기물 통계자료 조사 및 분석"
+                },
+                {
+                  "id": "subject-1.major-2.minor-1.detail-3",
+                  "name": "폐기물 발생 및 처리 현황 분석"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-2.minor-2",
+              "name": "환경법규와 정책 조사",
+              "details": [
+                {
+                  "id": "subject-1.major-2.minor-2.detail-1",
+                  "name": "환경 관련 법률 및 제도 파악"
+                },
+                {
+                  "id": "subject-1.major-2.minor-2.detail-2",
+                  "name": "폐기물 처리 법적 기준 및 관리 기준 파악"
+                },
+                {
+                  "id": "subject-1.major-2.minor-2.detail-3",
+                  "name": "폐기물 관리 대책 및 방안"
+                },
+                {
+                  "id": "subject-1.major-2.minor-2.detail-4",
+                  "name": "국외 폐기물 분류체계 및 관련 동향 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-2.minor-3",
+              "name": "폐기물관련법",
+              "details": [
+                {
+                  "id": "subject-1.major-2.minor-3.detail-1",
+                  "name": "폐기물관리법"
+                },
+                {
+                  "id": "subject-1.major-2.minor-3.detail-2",
+                  "name": "기타 관련 법"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-1.major-3",
+          "name": "폐기물처리시설 설치 계획",
+          "minors": [
+            {
+              "id": "subject-1.major-3.minor-1",
+              "name": "폐기물처리시설 종류, 특성파악",
+              "details": [
+                {
+                  "id": "subject-1.major-3.minor-1.detail-1",
+                  "name": "대상 폐기물의 특성 파악"
+                },
+                {
+                  "id": "subject-1.major-3.minor-1.detail-2",
+                  "name": "처리시설 분류 및 주요 단위공정 파악"
+                },
+                {
+                  "id": "subject-1.major-3.minor-1.detail-3",
+                  "name": "처리시설별 특성 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-3.minor-2",
+              "name": "폐기물처리시설 현황 조사",
+              "details": [
+                {
+                  "id": "subject-1.major-3.minor-2.detail-1",
+                  "name": "처리시설 조사 및 파악"
+                },
+                {
+                  "id": "subject-1.major-3.minor-2.detail-2",
+                  "name": "설계도서의 이해"
+                },
+                {
+                  "id": "subject-1.major-3.minor-2.detail-3",
+                  "name": "설계, 시공, 운전의 문제점 분석 및 개선"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-3.minor-3",
+              "name": "처리공정별 최적 가용기술(BAT) 선정",
+              "details": [
+                {
+                  "id": "subject-1.major-3.minor-3.detail-1",
+                  "name": "최적 가용기술 선정"
+                },
+                {
+                  "id": "subject-1.major-3.minor-3.detail-2",
+                  "name": "부산물 활용 및 2차 오염 저감"
+                },
+                {
+                  "id": "subject-1.major-3.minor-3.detail-3",
+                  "name": "최적 가용기술을 활용한 폐기물처리시설 계획수립"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-1.major-4",
+          "name": "수거·운반",
+          "minors": [
+            {
+              "id": "subject-1.major-4.minor-1",
+              "name": "폐기물 분리배출 및 보관",
+              "details": [
+                {
+                  "id": "subject-1.major-4.minor-1.detail-1",
+                  "name": "폐기물의 분리배출 구분 및 방법"
+                },
+                {
+                  "id": "subject-1.major-4.minor-1.detail-2",
+                  "name": "폐기물 보관용기 종류 및 용량 파악"
+                },
+                {
+                  "id": "subject-1.major-4.minor-1.detail-3",
+                  "name": "배출원에서 폐기물 저감"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-4.minor-2",
+              "name": "폐기물 수거와 운반(수송)",
+              "details": [
+                {
+                  "id": "subject-1.major-4.minor-2.detail-1",
+                  "name": "수거체계 파악 및 계획"
+                },
+                {
+                  "id": "subject-1.major-4.minor-2.detail-2",
+                  "name": "수거관련 장비, 차량 현황 파악"
+                },
+                {
+                  "id": "subject-1.major-4.minor-2.detail-3",
+                  "name": "수거 노선 계획"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-4.minor-3",
+              "name": "적환장(중계처리시설) 관리",
+              "details": [
+                {
+                  "id": "subject-1.major-4.minor-3.detail-1",
+                  "name": "적환장의 위치와 규모 파악"
+                },
+                {
+                  "id": "subject-1.major-4.minor-3.detail-2",
+                  "name": "폐기물 종류별 분리 및 선별"
+                },
+                {
+                  "id": "subject-1.major-4.minor-3.detail-3",
+                  "name": "폐기물의 압축 및 적재방법"
+                },
+                {
+                  "id": "subject-1.major-4.minor-3.detail-4",
+                  "name": "적환장 2차 환경오염 관리"
+                }
+              ]
+            },
+            {
+              "id": "subject-1.major-4.minor-4",
+              "name": "폐기물 추적 관리",
+              "details": [
+                {
+                  "id": "subject-1.major-4.minor-4.detail-1",
+                  "name": "무선주파수 인식 시스템의 이해"
+                },
+                {
+                  "id": "subject-1.major-4.minor-4.detail-2",
+                  "name": "GIS, GPS 시스템의 파악"
+                },
+                {
+                  "id": "subject-1.major-4.minor-4.detail-3",
+                  "name": "올바로시스템(전자 인수인계서)의 이해 및 활용"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-1.major-5",
+          "name": "폐기물관리 행정 업무",
+          "minors": [
+            {
+              "id": "subject-1.major-5.minor-1",
+              "name": "행정절차 이행",
+              "details": [
+                {
+                  "id": "subject-1.major-5.minor-1.detail-1",
+                  "name": "폐기물 관련 인허가 업무 파악"
+                },
+                {
+                  "id": "subject-1.major-5.minor-1.detail-2",
+                  "name": "폐기물 시설 운영 실적자료 보관 및 관리"
+                },
+                {
+                  "id": "subject-1.major-5.minor-1.detail-3",
+                  "name": "폐기물 관련 법에 따른 서류 작성, 기록 및 보존"
+                },
+                {
+                  "id": "subject-1.major-5.minor-1.detail-4",
+                  "name": "법적 행정조치에 대한 대응 업무"
+                },
+                {
+                  "id": "subject-1.major-5.minor-1.detail-5",
+                  "name": "폐기물 관련 안전사고 예방 및 관리"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-2",
+      "name": "폐기물 재활용 및 자원화 기술",
+      "questionCount": 20,
+      "majors": [
+        {
+          "id": "subject-2.major-1",
+          "name": "물리적 처리기술",
+          "minors": [
+            {
+              "id": "subject-2.major-1.minor-1",
+              "name": "전처리 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-1.minor-1.detail-1",
+                  "name": "압축·파쇄·분쇄·절단 기술"
+                },
+                {
+                  "id": "subject-2.major-1.minor-1.detail-2",
+                  "name": "용융·증발·농축·정제 기술"
+                },
+                {
+                  "id": "subject-2.major-1.minor-1.detail-3",
+                  "name": "유수 분리·탈수·건조 기술"
+                },
+                {
+                  "id": "subject-2.major-1.minor-1.detail-4",
+                  "name": "2차 환경오염방지 기술"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-1.minor-2",
+              "name": "연료화 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-1.minor-2.detail-1",
+                  "name": "연료화 대상 가연성 폐기물의 성상, 특성 이해"
+                },
+                {
+                  "id": "subject-2.major-1.minor-2.detail-2",
+                  "name": "연료화 시설 단위공정 파악"
+                },
+                {
+                  "id": "subject-2.major-1.minor-2.detail-3",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-1.minor-2.detail-4",
+                  "name": "연료의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-1.minor-3",
+              "name": "건설폐기물 처리 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-1.minor-3.detail-1",
+                  "name": "건설폐기물의 종류 파악"
+                },
+                {
+                  "id": "subject-2.major-1.minor-3.detail-2",
+                  "name": "건설폐기물의 처리 공정 파악"
+                },
+                {
+                  "id": "subject-2.major-1.minor-3.detail-3",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-1.minor-3.detail-4",
+                  "name": "재활용 제품의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-1.minor-4",
+              "name": "기타 물리적처리 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-1.minor-4.detail-1",
+                  "name": "기타 물리적처리 기술"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-2.major-2",
+          "name": "화학적 처리기술",
+          "minors": [
+            {
+              "id": "subject-2.major-2.minor-1",
+              "name": "화학적 처리",
+              "details": [
+                {
+                  "id": "subject-2.major-2.minor-1.detail-1",
+                  "name": "고형화·안정화, 고화 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-1.detail-2",
+                  "name": "중화·산화·환원·중합·축합·치환 등 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-1.detail-3",
+                  "name": "응집·침전 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-1.detail-4",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-1.detail-5",
+                  "name": "재활용 제품의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-2.minor-2",
+              "name": "열적ㆍ화학적 처리",
+              "details": [
+                {
+                  "id": "subject-2.major-2.minor-2.detail-1",
+                  "name": "열분해 재활용"
+                },
+                {
+                  "id": "subject-2.major-2.minor-2.detail-2",
+                  "name": "가용화 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-2.detail-3",
+                  "name": "기타 열적처리 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-2.detail-4",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-2.detail-5",
+                  "name": "재활용 제품의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-2.minor-3",
+              "name": "기타 화학적 처리",
+              "details": [
+                {
+                  "id": "subject-2.major-2.minor-3.detail-1",
+                  "name": "각종 금속 회수 기술"
+                },
+                {
+                  "id": "subject-2.major-2.minor-3.detail-2",
+                  "name": "바이오디젤 등 화학적 생산기술"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-2.major-3",
+          "name": "생물학적 처리기술",
+          "minors": [
+            {
+              "id": "subject-2.major-3.minor-1",
+              "name": "호기성 처리 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-3.minor-1.detail-1",
+                  "name": "퇴비화 기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-1.detail-2",
+                  "name": "고온습식 산화 기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-1.detail-3",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-1.detail-4",
+                  "name": "재활용 제품의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-3.minor-2",
+              "name": "혐기성 처리 기술",
+              "details": [
+                {
+                  "id": "subject-2.major-3.minor-2.detail-1",
+                  "name": "혐기성 소화 기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-2.detail-2",
+                  "name": "바이오가스의 정제 및 이용"
+                },
+                {
+                  "id": "subject-2.major-3.minor-2.detail-3",
+                  "name": "2차 환경오염방지 기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-2.detail-4",
+                  "name": "재활용 제품의 품질기준 파악"
+                }
+              ]
+            },
+            {
+              "id": "subject-2.major-3.minor-3",
+              "name": "기타 생물학적 처리",
+              "details": [
+                {
+                  "id": "subject-2.major-3.minor-3.detail-1",
+                  "name": "바이오 에탄올, 메탄올 등 생물학적 생산기술"
+                },
+                {
+                  "id": "subject-2.major-3.minor-3.detail-2",
+                  "name": "기타 생물학적 처리 기술"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-3",
+      "name": "폐기물 처분 기술",
+      "questionCount": 20,
+      "majors": [
+        {
+          "id": "subject-3.major-1",
+          "name": "중간처분 기술",
+          "minors": [
+            {
+              "id": "subject-3.major-1.minor-1",
+              "name": "연소이론 및 계산",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-1.detail-1",
+                  "name": "연소 및 열효율"
+                },
+                {
+                  "id": "subject-3.major-1.minor-1.detail-2",
+                  "name": "산소량·공기량·연소가스량"
+                },
+                {
+                  "id": "subject-3.major-1.minor-1.detail-3",
+                  "name": "연소배기가스내 오염물질 종류 및 농도 등"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-2",
+              "name": "폐기물 종류별 연소특성",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-2.detail-1",
+                  "name": "고위 및 저위 발열량"
+                },
+                {
+                  "id": "subject-3.major-1.minor-2.detail-2",
+                  "name": "생활폐기물 연소특성"
+                },
+                {
+                  "id": "subject-3.major-1.minor-2.detail-3",
+                  "name": "사업장폐기물 연소특성"
+                },
+                {
+                  "id": "subject-3.major-1.minor-2.detail-4",
+                  "name": "기타 폐기물 연소특성"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-3",
+              "name": "소각공정",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-3.detail-1",
+                  "name": "폐기물 투입방식"
+                },
+                {
+                  "id": "subject-3.major-1.minor-3.detail-2",
+                  "name": "연소조건 및 영향인자"
+                },
+                {
+                  "id": "subject-3.major-1.minor-3.detail-3",
+                  "name": "소각재 처분"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-4",
+              "name": "소각로의 종류 및 특성",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-4.detail-1",
+                  "name": "소각로의 종류 및 특성"
+                },
+                {
+                  "id": "subject-3.major-1.minor-4.detail-2",
+                  "name": "연소방식의 종류 및 특성"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-5",
+              "name": "소각로의 설계 및 운전관리",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-5.detail-1",
+                  "name": "소각로 설계"
+                },
+                {
+                  "id": "subject-3.major-1.minor-5.detail-2",
+                  "name": "소각로 운전관리"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-6",
+              "name": "연소가스 처리 및 오염방지",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-6.detail-1",
+                  "name": "연소가스 처리 방법 및 장치"
+                },
+                {
+                  "id": "subject-3.major-1.minor-6.detail-2",
+                  "name": "연소가스 처리 설비의 종류 및 특징"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-1.minor-7",
+              "name": "폐열 회수 및 이용",
+              "details": [
+                {
+                  "id": "subject-3.major-1.minor-7.detail-1",
+                  "name": "폐열 회수 방법"
+                },
+                {
+                  "id": "subject-3.major-1.minor-7.detail-2",
+                  "name": "폐열 회수 설비"
+                },
+                {
+                  "id": "subject-3.major-1.minor-7.detail-3",
+                  "name": "회수에너지 이용"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-3.major-2",
+          "name": "최종처분 기술",
+          "minors": [
+            {
+              "id": "subject-3.major-2.minor-1",
+              "name": "매립 기술",
+              "details": [
+                {
+                  "id": "subject-3.major-2.minor-1.detail-1",
+                  "name": "매립지 선정"
+                },
+                {
+                  "id": "subject-3.major-2.minor-1.detail-2",
+                  "name": "매립 공법"
+                },
+                {
+                  "id": "subject-3.major-2.minor-1.detail-3",
+                  "name": "매립지내 유기물 분해"
+                },
+                {
+                  "id": "subject-3.major-2.minor-1.detail-4",
+                  "name": "침출수 발생 및 처분"
+                },
+                {
+                  "id": "subject-3.major-2.minor-1.detail-5",
+                  "name": "가스 발생 및 처분"
+                },
+                {
+                  "id": "subject-3.major-2.minor-1.detail-6",
+                  "name": "매립시설 설계 및 운전관리"
+                }
+              ]
+            },
+            {
+              "id": "subject-3.major-2.minor-2",
+              "name": "매립지 안정화 및 사후관리",
+              "details": [
+                {
+                  "id": "subject-3.major-2.minor-2.detail-1",
+                  "name": "매립지 안정화 검토"
+                },
+                {
+                  "id": "subject-3.major-2.minor-2.detail-2",
+                  "name": "사후관리"
+                },
+                {
+                  "id": "subject-3.major-2.minor-2.detail-3",
+                  "name": "사후 토지 이용 계획"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject-4",
+      "name": "폐기물공정 시험기준",
+      "questionCount": 20,
+      "majors": [
+        {
+          "id": "subject-4.major-1",
+          "name": "총칙",
+          "minors": [
+            {
+              "id": "subject-4.major-1.minor-1",
+              "name": "일반 사항",
+              "details": [
+                {
+                  "id": "subject-4.major-1.minor-1.detail-1",
+                  "name": "용어 정의"
+                },
+                {
+                  "id": "subject-4.major-1.minor-1.detail-2",
+                  "name": "기타 시험 조작 사항 등"
+                },
+                {
+                  "id": "subject-4.major-1.minor-1.detail-3",
+                  "name": "정도보증/정도관리 등"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-4.major-2",
+          "name": "일반 시험법",
+          "minors": [
+            {
+              "id": "subject-4.major-2.minor-1",
+              "name": "시료채취 방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-1.detail-1",
+                  "name": "성상에 따른 시료의 채취방법"
+                },
+                {
+                  "id": "subject-4.major-2.minor-1.detail-2",
+                  "name": "시료의 양과 수"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-2.minor-2",
+              "name": "시료의 조제 방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-2.detail-1",
+                  "name": "시료 전처리"
+                },
+                {
+                  "id": "subject-4.major-2.minor-2.detail-2",
+                  "name": "시료 축소 방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-2.minor-3",
+              "name": "시료의 전처리 방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-3.detail-1",
+                  "name": "전처리 필요성"
+                },
+                {
+                  "id": "subject-4.major-2.minor-3.detail-2",
+                  "name": "전처리 방법 및 특징"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-2.minor-4",
+              "name": "함량 시험 방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-4.detail-1",
+                  "name": "원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-2.minor-4.detail-2",
+                  "name": "시험 방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-2.minor-5",
+              "name": "용출시험 방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-5.detail-1",
+                  "name": "적용범위 및 시료용액의 조제"
+                },
+                {
+                  "id": "subject-4.major-2.minor-5.detail-2",
+                  "name": "용출조작 및 시험방법"
+                },
+                {
+                  "id": "subject-4.major-2.minor-5.detail-3",
+                  "name": "시험결과의 보정"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-2.minor-6",
+              "name": "기타 시험방법",
+              "details": [
+                {
+                  "id": "subject-4.major-2.minor-6.detail-1",
+                  "name": "유해특성(재활용환경성평가)"
+                },
+                {
+                  "id": "subject-4.major-2.minor-6.detail-2",
+                  "name": "금속함량(수출입폐기물)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-4.major-3",
+          "name": "기기 분석법",
+          "minors": [
+            {
+              "id": "subject-4.major-3.minor-1",
+              "name": "자외선/가시선분광법",
+              "details": [
+                {
+                  "id": "subject-4.major-3.minor-1.detail-1",
+                  "name": "측정원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-3.minor-1.detail-2",
+                  "name": "장치의 구성 및 특성"
+                },
+                {
+                  "id": "subject-4.major-3.minor-1.detail-3",
+                  "name": "조작 및 결과분석방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-3.minor-2",
+              "name": "원자흡수분광광도법",
+              "details": [
+                {
+                  "id": "subject-4.major-3.minor-2.detail-1",
+                  "name": "측정원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-3.minor-2.detail-2",
+                  "name": "장치의 구성 및 특성"
+                },
+                {
+                  "id": "subject-4.major-3.minor-2.detail-3",
+                  "name": "조작 및 결과분석방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-3.minor-3",
+              "name": "유도결합 플라즈마 원자발광분광법",
+              "details": [
+                {
+                  "id": "subject-4.major-3.minor-3.detail-1",
+                  "name": "측정원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-3.minor-3.detail-2",
+                  "name": "장치의 구성 및 특성"
+                },
+                {
+                  "id": "subject-4.major-3.minor-3.detail-3",
+                  "name": "조작 및 결과분석방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-3.minor-4",
+              "name": "기체크로마토그래피법",
+              "details": [
+                {
+                  "id": "subject-4.major-3.minor-4.detail-1",
+                  "name": "측정원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-3.minor-4.detail-2",
+                  "name": "장치의 구성 및 특성"
+                },
+                {
+                  "id": "subject-4.major-3.minor-4.detail-3",
+                  "name": "조작 및 결과분석방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-3.minor-5",
+              "name": "이온전극법 등",
+              "details": [
+                {
+                  "id": "subject-4.major-3.minor-5.detail-1",
+                  "name": "측정원리 및 적용범위"
+                },
+                {
+                  "id": "subject-4.major-3.minor-5.detail-2",
+                  "name": "장치의 구성 및 특성"
+                },
+                {
+                  "id": "subject-4.major-3.minor-5.detail-3",
+                  "name": "조작 및 결과분석방법"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-4.major-4",
+          "name": "항목별 시험방법",
+          "minors": [
+            {
+              "id": "subject-4.major-4.minor-1",
+              "name": "일반항목",
+              "details": [
+                {
+                  "id": "subject-4.major-4.minor-1.detail-1",
+                  "name": "측정원리"
+                },
+                {
+                  "id": "subject-4.major-4.minor-1.detail-2",
+                  "name": "기구 및 기기"
+                },
+                {
+                  "id": "subject-4.major-4.minor-1.detail-3",
+                  "name": "시험방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-4.minor-2",
+              "name": "금속류",
+              "details": [
+                {
+                  "id": "subject-4.major-4.minor-2.detail-1",
+                  "name": "측정원리"
+                },
+                {
+                  "id": "subject-4.major-4.minor-2.detail-2",
+                  "name": "기구 및 기기"
+                },
+                {
+                  "id": "subject-4.major-4.minor-2.detail-3",
+                  "name": "시험방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-4.minor-3",
+              "name": "유기화합물류",
+              "details": [
+                {
+                  "id": "subject-4.major-4.minor-3.detail-1",
+                  "name": "측정원리"
+                },
+                {
+                  "id": "subject-4.major-4.minor-3.detail-2",
+                  "name": "기구 및 기기"
+                },
+                {
+                  "id": "subject-4.major-4.minor-3.detail-3",
+                  "name": "시험방법"
+                }
+              ]
+            },
+            {
+              "id": "subject-4.major-4.minor-4",
+              "name": "기타",
+              "details": [
+                {
+                  "id": "subject-4.major-4.minor-4.detail-1",
+                  "name": "측정원리"
+                },
+                {
+                  "id": "subject-4.major-4.minor-4.detail-2",
+                  "name": "기구 및 기기"
+                },
+                {
+                  "id": "subject-4.major-4.minor-4.detail-3",
+                  "name": "시험방법"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-4.major-5",
+          "name": "분석용 시약 제조",
+          "minors": [
+            {
+              "id": "subject-4.major-5.minor-1",
+              "name": "시약제조방법",
+              "details": [
+                {
+                  "id": "subject-4.major-5.minor-1.detail-1",
+                  "name": "시약 및 용액"
+                },
+                {
+                  "id": "subject-4.major-5.minor-1.detail-2",
+                  "name": "완충용액"
+                },
+                {
+                  "id": "subject-4.major-5.minor-1.detail-3",
+                  "name": "표준용액"
+                },
+                {
+                  "id": "subject-4.major-5.minor-1.detail-4",
+                  "name": "규정용액"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subject-4.major-6",
+          "name": "폐기물 조사분석",
+          "minors": [
+            {
+              "id": "subject-4.major-6.minor-1",
+              "name": "결과해석 및 보고",
+              "details": [
+                {
+                  "id": "subject-4.major-6.minor-1.detail-1",
+                  "name": "폐기물 분석결과 정리, 기록, 해석 및 보고"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

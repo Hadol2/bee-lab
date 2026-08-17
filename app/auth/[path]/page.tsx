@@ -16,7 +16,7 @@ export default async function AuthPage({
   const { path } = await params;
   return (
     <main className="auth-page">
-      <Link className="auth-brand" href="/">폐기물기사 <b>LAB</b></Link>
+      <Link className="auth-brand" href="/">폐기물처리기사</Link>
       <AuthView path={path} />
     </main>
   );

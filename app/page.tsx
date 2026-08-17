@@ -8,7 +8,9 @@ export default async function Home() {
   const user = session?.user;
   return (
     <QuizApp
-      initialUser={user ? { displayName: user.name || user.email || "회원" } : null}
+      initialUser={
+        user ? { id: user.id, displayName: user.name || user.email || "회원" } : null
+      }
     />
   );
 }

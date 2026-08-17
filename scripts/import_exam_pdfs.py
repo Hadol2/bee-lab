@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import shutil
+import subprocess
 import unicodedata
 from pathlib import Path
 
@@ -57,6 +57,65 @@ TOPIC_RULES = [
     ("법령·기준", r"법|시행령|시행규칙|환경부령|허가|신고|과태료|과징금|기준"),
 ]
 
+QUESTION_OVERRIDES = {
+    "20150531-024": {
+        "text": "유기물(C6H12O6) 8 kg을 혐기성으로 완전 분해할 때 생성될 수 있는 이론적 메탄의 양(Sm3)은?",
+    },
+    "20150531-026": {
+        "choices": ["약 634 m2", "약 784 m2", "약 854 m2", "약 964 m2"],
+    },
+    "20150531-082": {
+        "choices": ["3300 m2 이상", "5500 m2 이상", "10000 m2 이상", "30000 m2 이상"],
+    },
+    "20150919-025": {
+        "text": "포도당(C6H12O6)으로 구성된 유기물 3 kg이 혐기성 미생물에 의해 완전히 분해되어 생성되는 메탄의 용적(Sm3)은?",
+    },
+    "20160306-043": {
+        "choices": ["약 2.2 × 104", "약 4.4 × 104", "약 6.6 × 104", "약 8.8 × 104"],
+    },
+    "20160306-058": {
+        "choices": ["7.5 Sm3/kg", "9.5 Sm3/kg", "11.5 Sm3/kg", "13.5 Sm3/kg"],
+    },
+    "20161001-034": {
+        "choices": ["Al2O3", "V2O5", "TiO2", "Pd"],
+    },
+    "20190303-021": {
+        "choices": ["Al2O3", "V2O5", "TiO2", "Pd"],
+    },
+    "20190427-024": {
+        "text": "유기물(C6H12O6) 0.1 ton을 혐기성 소화할 때 생성될 수 있는 최대 메탄의 양(kg)은?",
+    },
+    "20190427-076": {
+        "text": "용출액 중의 PCBs 시험방법(기체크로마토그래피법)을 설명한 것으로 틀린 것은?",
+        "choices": [
+            "용출액 중의 PCBs를 헥산으로 추출한다.",
+            "전자포획형 검출기(ECD)를 사용한다.",
+            "정제는 활성탄칼럼을 사용한다.",
+            "용출용액의 정량한계는 0.0005mg/L 이다.",
+        ],
+    },
+    "20200822-030": {
+        "choices": ["2SiO2·Fe2O3", "3CaO·SiO2", "2CaO·MgO", "3CaO·Fe2O3"],
+    },
+    "20200926-022": {
+        "text": "유기물(C6H12O6)을 혐기성(피산소성) 소화시킬 때 반응에 대한 설명으로 옳지 않은 것은?",
+    },
+    "20210912-029": {
+        "text": "유기물(C6H12O6) 0.1 ton을 혐기성 소화할 때 생성될 수 있는 최대 메탄의 양(kg)은?",
+    },
+    "20210912-069": {
+        "choices": [
+            "끓는점이 낮거나 비극성 유기화합물들이 함께 추출되어 간섭현상이 일어난다.",
+            "시료 중에 트리클로로에틸렌(C2HCl3)의 정량한계는 0.008mg/L, 테트라클로로에틸렌(C2Cl4)의 정량한계는 0.002mg/L이다.",
+            "디클로로메탄과 같은 휘발성 유기물은 보관이나 운반 중에 격막(septum)을 통해 시료 안으로 확산되어 시료를 오염시킬 수 있으므로 현장 바탕시료로서 이를 점검하여야 한다.",
+            "디클로로메탄과 같이 머무름 시간이 짧은 화합물은 용매의 피크와 겹쳐 분석을 방해할 수 있다.",
+        ],
+    },
+    "20220424-030": {
+        "choices": ["4.0×10-8", "0.96×10-8", "0.64×10-8", "0.25×10-8"],
+    },
+}
+
 
 def subject_for(number: int) -> str:
     if number <= 20:
@@ -75,6 +134,41 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", " ".join(line for line in lines if line)).strip()
 
 
+def extract_region_text(
+    pdf_path: Path,
+    page_number: int,
+    box: tuple[float, float, float, float],
+) -> str:
+    """Extract a page region while preserving inline chemical subscripts."""
+    x0, y0, x1, y1 = box
+    result = subprocess.run(
+        [
+            "pdftotext",
+            "-layout",
+            "-r",
+            "72",
+            "-f",
+            str(page_number),
+            "-l",
+            str(page_number),
+            "-x",
+            str(round(x0)),
+            "-y",
+            str(round(y0)),
+            "-W",
+            str(round(x1 - x0)),
+            "-H",
+            str(round(y1 - y0)),
+            str(pdf_path),
+            "-",
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.replace("\f", "")
+
+
 def labels_for(subject: str, text: str) -> list[str]:
     labels = [label for label, pattern in TOPIC_RULES if re.search(pattern, text, re.I)]
     if subject == "폐기물 관계 법규" and "법령·기준" not in labels:
@@ -82,16 +176,6 @@ def labels_for(subject: str, text: str) -> list[str]:
     if subject == "폐기물 공정시험기준" and "분석·측정" not in labels:
         labels.append("분석·측정")
     return labels[:3] or ["개념형"]
-
-
-def explanation_for(subject: str, labels: list[str]) -> str:
-    if "계산형" in labels:
-        return "교사용 원문의 정답표를 기준으로 채점했습니다. 단위를 먼저 통일한 뒤 공식 대입값과 보기의 자릿수를 차례로 확인해 보세요."
-    if subject == "폐기물 관계 법규":
-        return "교사용 원문의 정답표를 기준으로 채점했습니다. 출제 당시 법령 기준 문항이므로 현재 법령의 개정 여부는 별도로 확인하세요."
-    if subject == "폐기물 공정시험기준":
-        return "교사용 원문의 정답표를 기준으로 채점했습니다. 시험방법의 시약, 조작 조건, 측정 원리를 한 묶음으로 복습해 보세요."
-    return "교사용 원문의 정답표를 기준으로 채점했습니다. 문제의 핵심 개념과 오답 선택지의 차이를 원문에서 함께 비교해 보세요."
 
 
 def extract_visuals(pdf_path: Path, date: str, output: Path) -> dict[int, list[str]]:
@@ -151,14 +235,7 @@ def extract_exam(pdf_path: Path, date: str, visuals: dict[int, list[str]]) -> li
             ]
             for box in boxes:
                 page_offsets.append((sum(len(chunk) + 1 for chunk in chunks), page_number))
-                chunks.append(
-                    page.crop(box).extract_text(
-                        x_tolerance=2,
-                        y_tolerance=3,
-                        layout=True,
-                    )
-                    or ""
-                )
+                chunks.append(extract_region_text(pdf_path, page_number, box))
 
     corpus = "\n".join(chunks)
     matches = list(re.finditer(r"(?m)^\s*(\d{1,3})\.\s", corpus))
@@ -197,21 +274,22 @@ def extract_exam(pdf_path: Path, date: str, visuals: dict[int, list[str]]) -> li
         )
         subject = subject_for(number)
         labels = labels_for(subject, f"{text} {' '.join(choices)}")
-        questions.append(
-            {
-                "id": f"{date}-{number:03d}",
-                "number": number,
-                "subject": subject,
-                "labels": labels,
-                "text": text,
-                "choices": choices,
-                "answer": MARK_TO_INDEX[answer_marks[0]],
-                "explanation": explanation_for(subject, labels),
-                "keyPoint": " · ".join(labels),
-                "sourcePage": page_number,
-                "visuals": visuals.get(number, []),
-            }
-        )
+        question_id = f"{date}-{number:03d}"
+        question = {
+            "id": question_id,
+            "number": number,
+            "subject": subject,
+            "labels": labels,
+            "text": text,
+            "choices": choices,
+            "answer": MARK_TO_INDEX[answer_marks[0]],
+            "explanation": None,
+            "keyPoint": " · ".join(labels),
+            "sourcePage": page_number,
+            "visuals": visuals.get(number, []),
+        }
+        question.update(QUESTION_OVERRIDES.get(question_id, {}))
+        questions.append(question)
 
     numbers = [question["number"] for question in questions]
     if numbers != list(range(1, 101)):
@@ -242,27 +320,18 @@ def main() -> None:
         raise ValueError("모든 회차에 교사용·학생용 PDF가 한 쌍씩 있어야 합니다.")
 
     data_dir = args.output / "data" / "exams"
-    pdf_dir = args.output / "pdfs"
     image_dir = args.output / "question-images"
     data_dir.mkdir(parents=True, exist_ok=True)
-    pdf_dir.mkdir(parents=True, exist_ok=True)
     image_dir.mkdir(parents=True, exist_ok=True)
     manifest = []
 
     for date in sorted(grouped, reverse=True):
         files = grouped[date]
-        teacher_name = f"{date}-teacher.pdf"
-        student_name = f"{date}-student.pdf"
-        shutil.copyfile(files["teacher"], pdf_dir / teacher_name)
-        shutil.copyfile(files["student"], pdf_dir / student_name)
-
         visuals = extract_visuals(files["student"], date, image_dir)
         questions = extract_exam(files["teacher"], date, visuals)
         payload = {
             "date": date,
             "label": EXAM_LABELS[date],
-            "studentPdf": f"/pdfs/{student_name}",
-            "teacherPdf": f"/pdfs/{teacher_name}",
             "questions": questions,
         }
         (data_dir / f"{date}.json").write_text(
@@ -275,8 +344,6 @@ def main() -> None:
                 "label": EXAM_LABELS[date],
                 "count": len(questions),
                 "dataUrl": f"/data/exams/{date}.json",
-                "studentPdf": f"/pdfs/{student_name}",
-                "teacherPdf": f"/pdfs/{teacher_name}",
             }
         )
         print(f"{date}: {len(questions)}문제")
@@ -285,7 +352,7 @@ def main() -> None:
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"완료: {len(manifest)}회차, {sum(item['count'] for item in manifest)}문제, PDF {len(source_files)}개")
+    print(f"완료: {len(manifest)}회차, {sum(item['count'] for item in manifest)}문제")
 
 
 if __name__ == "__main__":

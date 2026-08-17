@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "source": "Q-Net (한국산업인력공단) 출제기준(필기) - 폐기물처리기사",
+  "url": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=1950&jmInfoDivCcd=B0",
+  "query": {
+    "gId": "",
+    "gSite": "Q",
+    "id": "crf00503s02",
+    "jmCd": "1950",
+    "jmInfoDivCcd": "B0"
+  },
+  "reportId": 962,
+  "period": { "start": "2026-01-01", "end": "2030-12-31" },
+  "examFormat": {
+    "method": "객관식",
+    "subjectCount": 4,
+    "questionsPerSubject": 20,
+    "totalQuestions": 80,
+    "durationMinutes": 120
+  },
+  "file": {
+    "sha256": "e289ecc716a90069c4fe03b9db0948edee98f446a0f7c2ef4a16a778905725a2",
+    "bytes": 190295,
+    "totalPages": 47,
+    "writtenSyllabusPages": { "start": 1, "end": 8 },
+    "practicalSyllabusStartsAtPage": 9,
+    "excludedFromThisMapping": "practical (실기) syllabus, pages 9-47"
+  },
+  "retrievedAt": "2026-08-14",
+  "privateCopy": {
+    "location": "outside repository, never committed or served under public/",
+    "filename": "qnet-waste-engineer-written-syllabus-2026-2030-jmCd1950-report962.pdf",
+    "note": "Kept as a private reference copy per policy; the working repo only ever stores this derived JSON taxonomy/provenance, never the PDF binary."
+  }
+}
