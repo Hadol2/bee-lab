@@ -77,6 +77,7 @@ type SavedGeneratedSession = {
 };
 
 const exams = manifestData as ExamSummary[];
+const totalQuestionCount = exams.reduce((sum, exam) => sum + exam.count, 0).toLocaleString("ko-KR");
 const choiceMarks = ["①", "②", "③", "④"];
 const SUBJECT_COUNT_OPTIONS = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 const storageKey = "waste-cbt-progress-v2";
@@ -973,7 +974,7 @@ export default function QuizApp({
           <span>폐기물처리기사</span>
         </button>
         <div className="top-actions">
-          <span className="library-count">5과목 · 2,200문제</span>
+          <span className="library-count">5과목 · {totalQuestionCount}문제</span>
           <span className="save-state">
             <i /> {syncLabel}
             {syncState === "error" && (
@@ -997,13 +998,13 @@ export default function QuizApp({
           <section className="learning-home" aria-labelledby="learning-home-title">
             <div className="home-hero">
               <div>
-                <span className="home-kicker">오늘의 학습</span>
-                <h1 id="learning-home-title">부담 없이 시작하고,<br /> 틀린 문제까지 끝내세요.</h1>
-                <p>짧게 풀려면 과목별 {selectedSubjectCount}문제, 실전처럼 점검하려면 100문제 모의고사를 선택하세요.</p>
+                <span className="home-kicker">폐기물처리기사 필기</span>
+                <h1 id="learning-home-title">기출 {totalQuestionCount}문제,<br /> 실전처럼 풀어보세요</h1>
+                <p>{exams.length}회차 기출 · 자동 채점 · 해설 · 오답 노트</p>
               </div>
               <div className="home-library" role="group" aria-label="문제은행 구성">
-                <div><strong>2,200</strong><span>전체 문제</span></div>
-                <div><strong>22</strong><span>기출 회차</span></div>
+                <div><strong>{totalQuestionCount}</strong><span>전체 문제</span></div>
+                <div><strong>{exams.length}</strong><span>기출 회차</span></div>
                 <div><strong>5</strong><span>필기 과목</span></div>
               </div>
             </div>

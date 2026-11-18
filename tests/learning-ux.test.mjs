@@ -8,7 +8,7 @@ const cssUrl = new URL("../app/globals.css", import.meta.url);
 test("learning home exposes the three primary study paths without requiring login", async () => {
   const app = await readFile(appUrl, "utf8");
 
-  assert.match(app, /부담 없이 시작하고,(<br \/>)? 틀린 문제까지 끝내세요/);
+  assert.match(app, /기출 \{totalQuestionCount\}문제,(<br \/>)? 실전처럼 풀어보세요/);
   assert.match(app, /과목별 \{selectedSubjectCount\}문제/);
   assert.match(app, /100문제 모의고사/);
   assert.match(app, /틀린 문제 다시 풀기/);
