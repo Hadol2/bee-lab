@@ -31,6 +31,7 @@ import {
 } from "../lib/question-sets";
 import manifestData from "../public/data/exams/manifest.json";
 import { getFreshnessNotice } from "../lib/freshness";
+import { BeeHive, BeeLogoMark, BeeMascot, SampleQuestionCard, SubjectStats, type HiveCell, type SubjectStat } from "./bee-home";
 
 type Question = {
   id: string;
@@ -78,6 +79,8 @@ type SavedGeneratedSession = {
 
 const exams = manifestData as ExamSummary[];
 const totalQuestionCount = exams.reduce((sum, exam) => sum + exam.count, 0).toLocaleString("ko-KR");
+const examYears = exams.map((exam) => Number(exam.date.slice(0, 4)));
+const examYearRange = `${Math.min(...examYears)}–${Math.max(...examYears)}`;
 const choiceMarks = ["①", "②", "③", "④"];
 const SUBJECT_COUNT_OPTIONS = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 const storageKey = "waste-cbt-progress-v2";
@@ -95,6 +98,20 @@ async function fetchExam(summary: ExamSummary): Promise<ExamData> {
   const response = await fetch(summary.dataUrl);
   if (!response.ok) throw new Error("exam load failed");
   return response.json() as Promise<ExamData>;
+}
+
+const examCache = new Map<string, Promise<ExamData>>();
+
+function fetchExamCached(summary: ExamSummary): Promise<ExamData> {
+  let cached = examCache.get(summary.date);
+  if (!cached) {
+    cached = fetchExam(summary).catch((error: unknown) => {
+      examCache.delete(summary.date);
+      throw error;
+    });
+    examCache.set(summary.date, cached);
+  }
+  return cached;
 }
 
 function loadLibrary(): Promise<RuntimeQuestion[]> {
@@ -423,6 +440,73 @@ export default function QuizApp({
   const bookmarksInSession = bookmarks.filter((id) => sessionIds.has(id));
   const completedCount = isMock && !mockSubmitted ? answeredInSession : sessionScore.evaluated;
   const progress = questions.length ? Math.round((completedCount / questions.length) * 100) : 0;
+  const [hiveCorrect, setHiveCorrect] = useState<Record<string, number>>({});
+  const [subjectTotals, setSubjectTotals] = useState<Record<string, { correct: number; total: number }> | null>(null);
+
+  useEffect(() => {
+    if (!hydrated || !showLearningHome) return;
+    const attempted = exams.filter((exam) => (savedAttemptStates[`exam:${exam.date}`]?.checked.length ?? 0) > 0);
+    if (!attempted.length) return;
+    let active = true;
+    Promise.all(
+      attempted.map(async (exam) => {
+        const attempt = savedAttemptStates[`exam:${exam.date}`];
+        const data = await fetchExamCached(exam);
+        const checkedIds = new Set(attempt.checked);
+        const correct = data.questions.filter(
+          (item) => checkedIds.has(item.id) && attempt.answers[item.id] === item.answer,
+        ).length;
+        return [exam.date, correct] as const;
+      }),
+    )
+      .then((entries) => {
+        if (active) setHiveCorrect(Object.fromEntries(entries));
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [hydrated, showLearningHome, savedAttemptStates]);
+
+  useEffect(() => {
+    if (!hydrated || !showLearningHome || !checked.length) return;
+    let active = true;
+    loadLibrary()
+      .then((library) => {
+        if (!active) return;
+        const byId = new Map(library.map((item) => [item.id, item]));
+        const totals: Record<string, { correct: number; total: number }> = {};
+        for (const id of checked) {
+          const item = byId.get(id);
+          if (!item || answers[id] === undefined) continue;
+          const entry = (totals[item.subject] ??= { correct: 0, total: 0 });
+          entry.total += 1;
+          if (answers[id] === item.answer) entry.correct += 1;
+        }
+        setSubjectTotals(totals);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, [hydrated, showLearningHome, checked, answers]);
+
+  const hiveCells: HiveCell[] = exams.map((exam) => {
+    const attempt = savedAttemptStates[`exam:${exam.date}`];
+    const checkedCount = attempt?.checked.length ?? 0;
+    return {
+      date: exam.date,
+      label: exam.label,
+      total: exam.count,
+      checked: checkedCount,
+      correct: checkedCount ? hiveCorrect[exam.date] ?? null : null,
+    };
+  });
+  const subjectStats: SubjectStat[] = OFFICIAL_SUBJECTS.map((subject) => ({
+    subject,
+    correct: checked.length ? subjectTotals?.[subject]?.correct ?? 0 : 0,
+    total: checked.length ? subjectTotals?.[subject]?.total ?? 0 : 0,
+  }));
   const statusPercent = sessionScore.complete ? sessionScore.accuracy : progress;
   const elapsed = elapsedBySession[activeSessionKey] ?? 0;
   const minutes = String(Math.floor(elapsed / 60)).padStart(2, "0");
@@ -561,14 +645,14 @@ export default function QuizApp({
     if (!isNewContext) {
       if (loadError) {
         retryCurrentExam();
-        return;
+        return true;
       }
       setReviewMode("all");
       setSelectedLabel("전체 유형");
       if (sessionScore.complete) setShowSessionResult(true);
-      return;
+      return true;
     }
-    if (!confirmReplaceInProgressSet()) return;
+    if (!confirmReplaceInProgressSet()) return false;
     saveCurrentAttempt();
     saveCurrentGeneratedSession();
     setLoading(true);
@@ -579,6 +663,11 @@ export default function QuizApp({
     setSelectedLabel("전체 유형");
     setMockSubmitted(false);
     setShowSessionResult(false);
+    return true;
+  }
+
+  function openExamFromHome(date: string) {
+    if (selectExam(date)) openCurrentSession();
   }
 
   function retryCurrentExam() {
@@ -964,14 +1053,9 @@ export default function QuizApp({
   return (
     <div className="app-shell">
       <header className="topbar">
-        <button className="brand" onClick={openLearningHome} aria-label="폐기물처리기사 학습 홈">
-          <svg className="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M22 19.27A2.73 2.73 0 0 1 19.27 22h-4.54A2.73 2.73 0 0 1 12 19.27V12h7.27A2.73 2.73 0 0 1 22 14.73v4.54Z" fill="#68C4FF" />
-            <path d="M20 2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3Z" fill="#0C79D8" />
-            <path d="M7 15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" fill="#0C79D8" />
-            <path d="M12 12H4.73A2.73 2.73 0 0 1 2 9.27V4.73A2.73 2.73 0 0 1 4.73 2h4.54A2.73 2.73 0 0 1 12 4.73V12Z" fill="#2E9EFF" />
-          </svg>
-          <span>폐기물처리기사</span>
+        <button className="brand" onClick={openLearningHome} aria-label="Bee-lab 학습 홈">
+          <BeeLogoMark />
+          <span className="brand-word">bee<b>-lab</b></span>
         </button>
         <div className="top-actions">
           <span className="library-count">5과목 · {totalQuestionCount}문제</span>
@@ -997,19 +1081,36 @@ export default function QuizApp({
         {showLearningHome ? (
           <section className="learning-home" aria-labelledby="learning-home-title">
             <div className="home-hero">
-              <div>
-                <span className="home-kicker">폐기물처리기사 필기</span>
+              <div className="home-hero-copy">
+                <div className="home-pills">
+                  <span className="home-kicker">폐기물처리기사 필기</span>
+                  <span className="home-new-pill"><b>NEW</b>{exams[0].label} 기출 추가</span>
+                </div>
                 <h1 id="learning-home-title">기출 {totalQuestionCount}문제,<br /> 실전처럼 풀어보세요</h1>
                 <p>{exams.length}회차 기출 · 자동 채점 · 해설 · 오답 노트</p>
+                <div className="home-hero-actions">
+                  <button className="home-primary" onClick={() => openExamFromHome(exams[0].date)} disabled={loading}>
+                    {exams[0].label} 풀기
+                  </button>
+                  <a className="home-secondary" href="#study-paths">학습 방식 고르기</a>
+                </div>
               </div>
-              <div className="home-library" role="group" aria-label="문제은행 구성">
-                <div><strong>{totalQuestionCount}</strong><span>전체 문제</span></div>
-                <div><strong>{exams.length}</strong><span>기출 회차</span></div>
-                <div><strong>5</strong><span>필기 과목</span></div>
+              <div className="home-hero-visual">
+                <BeeMascot />
+                <SampleQuestionCard />
               </div>
             </div>
 
-            <div className="home-section-heading">
+            <div className="home-library" role="group" aria-label="문제은행 구성">
+              <div><strong>{totalQuestionCount}</strong><span>전체 문제</span></div>
+              <div><strong>{exams.length}</strong><span>기출 회차</span></div>
+              <div><strong>5</strong><span>필기 과목</span></div>
+              <div><strong>{examYearRange}</strong><span>수록 연도</span></div>
+            </div>
+
+            <div className="bee-stripe" aria-hidden="true" />
+
+            <div className="home-section-heading" id="study-paths">
               <div><span>바로 시작하기</span><h2>지금 필요한 학습을 고르세요</h2></div>
               {answeredInSession > 0 && <small>현재 세트 {completedCount}/{questions.length} 진행 중</small>}
             </div>
@@ -1071,6 +1172,10 @@ export default function QuizApp({
                 <button className="home-secondary" onClick={() => void startWrongFromHome()} disabled={loading || !wrongIds.length}>오답 복습 시작</button>
               </article>
             </div>
+
+            <BeeHive cells={hiveCells} ready={hydrated} disabled={loading} onOpen={openExamFromHome} />
+
+            <SubjectStats stats={subjectStats} ready={hydrated} />
 
             <p className="home-footnote">로그인하지 않아도 바로 풀 수 있습니다. 로그인하면 오답 목록을 다른 기기와 동기화할 수 있습니다.</p>
           </section>
