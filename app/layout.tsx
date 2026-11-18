@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const protocol =
     incomingHeaders.get("x-forwarded-proto") ??
     (host.startsWith("localhost") ? "http" : "https");
-  const imageUrl = `${protocol}://${host}/og.png`;
+  const imageUrl = `${protocol}://${host}/og-bee.png`;
 
   return {
     title: "Bee-lab | 폐기물처리기사 기출문제 풀이",
@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: "Bee-lab · 폐기물처리기사 기출",
       description: "기출문제를 풀고 회차별 벌집을 채워보세요",
-      images: [{ url: imageUrl, width: 1733, height: 877, alt: "Bee-lab 폐기물처리기사" }],
+      images: [{ url: imageUrl, width: 2400, height: 1260, alt: "Bee-lab 폐기물처리기사" }],
     },
     twitter: {
       card: "summary_large_image",
