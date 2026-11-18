@@ -165,6 +165,7 @@ export default function QuizApp({
   const checkedRef = useRef(checked);
   const savedAttemptStatesRef = useRef(savedAttemptStates);
   const activeSessionKeyRef = useRef(activeSessionKey);
+  const hydratedSessionKeyRef = useRef<string | null>(null);
   answersRef.current = answers;
   checkedRef.current = checked;
   savedAttemptStatesRef.current = savedAttemptStates;
@@ -183,6 +184,7 @@ export default function QuizApp({
         setBookmarks(data.bookmarks ?? []);
         setElapsedBySession(data.elapsedBySession ?? {});
         setSavedAttemptStates(data.savedAttemptStates ?? {});
+        hydratedSessionKeyRef.current = data.activeSessionKey ?? null;
       } catch {
         window.localStorage.removeItem(storageKey);
       }
@@ -201,9 +203,19 @@ export default function QuizApp({
         bookmarks,
         elapsedBySession,
         savedAttemptStates,
+        activeSessionKey,
       }),
     );
-  }, [answers, checked, wrongIds, bookmarks, elapsedBySession, savedAttemptStates, hydrated]);
+  }, [
+    answers,
+    checked,
+    wrongIds,
+    bookmarks,
+    elapsedBySession,
+    savedAttemptStates,
+    activeSessionKey,
+    hydrated,
+  ]);
 
   useEffect(() => {
     if (!hydrated || !initialUser) return;
@@ -299,19 +311,22 @@ export default function QuizApp({
         const next = exam.questions.map((question) => withExam(question, exam));
         const nextSessionKey = getSessionKey("exam", exam.date, next);
         const savedAttempt = savedAttemptStatesRef.current[nextSessionKey];
-        if (savedAttempt) restoreAttempt(next, savedAttempt);
+        const resumingLastSession =
+          !savedAttempt && nextSessionKey === hydratedSessionKeyRef.current;
+        hydratedSessionKeyRef.current = null;
+        const restored = resumingLastSession
+          ? { answers: answersRef.current, checked: checkedRef.current }
+          : restoreAttempt(
+              next,
+              savedAttempt ?? { answers: {}, checked: [], mockSubmitted: false },
+            );
         activeSessionKeyRef.current = nextSessionKey;
         setActiveSessionKey(nextSessionKey);
         setQuestions(next);
         setSessionLabel(exam.label);
         setCurrentId(next[0]?.id ?? "");
         setShowSessionResult(
-          calculateSessionScore(
-            next,
-            savedAttempt?.answers ?? answersRef.current,
-            savedAttempt?.checked ?? checkedRef.current,
-            false,
-          ).complete,
+          calculateSessionScore(next, restored.answers, restored.checked, false).complete,
         );
         setLoading(false);
       })
@@ -609,9 +624,10 @@ export default function QuizApp({
     const savedAttempt = savedAttemptStatesRef.current[
       getSessionKey(mode, selectedExam, saved.questions)
     ];
-    const restored = savedAttempt
-      ? restoreAttempt(saved.questions, savedAttempt)
-      : { answers: answersRef.current, checked: checkedRef.current };
+    const restored = restoreAttempt(
+      saved.questions,
+      savedAttempt ?? { answers: {}, checked: [], mockSubmitted: false },
+    );
     const restoredSessionKey = getSessionKey(mode, saved.questions[0]?.examDate ?? selectedExam, saved.questions);
     activeSessionKeyRef.current = restoredSessionKey;
     setActiveSessionKey(restoredSessionKey);
@@ -948,7 +964,12 @@ export default function QuizApp({
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" onClick={openLearningHome} aria-label="폐기물처리기사 학습 홈">
-          <span className="brand-mark">W</span>
+          <svg className="brand-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 19.27A2.73 2.73 0 0 1 19.27 22h-4.54A2.73 2.73 0 0 1 12 19.27V12h7.27A2.73 2.73 0 0 1 22 14.73v4.54Z" fill="#68C4FF" />
+            <path d="M20 2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3Z" fill="#0C79D8" />
+            <path d="M7 15a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" fill="#0C79D8" />
+            <path d="M12 12H4.73A2.73 2.73 0 0 1 2 9.27V4.73A2.73 2.73 0 0 1 4.73 2h4.54A2.73 2.73 0 0 1 12 4.73V12Z" fill="#2E9EFF" />
+          </svg>
           <span>폐기물처리기사</span>
         </button>
         <div className="top-actions">
@@ -977,7 +998,7 @@ export default function QuizApp({
             <div className="home-hero">
               <div>
                 <span className="home-kicker">오늘의 학습</span>
-                <h1 id="learning-home-title">부담 없이 시작하고, 틀린 문제까지 끝내세요.</h1>
+                <h1 id="learning-home-title">부담 없이 시작하고,<br /> 틀린 문제까지 끝내세요.</h1>
                 <p>짧게 풀려면 과목별 {selectedSubjectCount}문제, 실전처럼 점검하려면 100문제 모의고사를 선택하세요.</p>
               </div>
               <div className="home-library" role="group" aria-label="문제은행 구성">
